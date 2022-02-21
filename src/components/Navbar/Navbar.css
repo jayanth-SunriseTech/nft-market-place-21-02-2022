@@ -1,0 +1,84 @@
+*{
+    font-family: 'Poppins', sans-serif !important;
+    
+}
+.navbar-expand-lg {
+  background-image: linear-gradient(
+    to bottom,
+    #656768,
+    #4e5151,
+    #383b3a,
+    #242725,
+    #111310
+  );
+}
+
+.searchbar_container .search{
+width: 100%;
+  position: relative;
+  display: flex;
+}
+.searchbar_container .searchbar{
+    width: 100%;
+    padding: 5px;
+     border-top-left-radius: 50px; 
+     border-bottom-left-radius: 50px; 
+    outline: none;
+    border-right: none;
+    color: #9DBFAF;
+}
+.searchbar_container .searchbar:focus{
+    color: #00B4CC;
+}
+.searchbar_container .search_btn{
+    width: 40px;
+  height: 50px;
+  text-align: center;
+  color: #fff;
+  background: #fff;
+  outline:none;
+  border-top-right-radius: 50px; 
+  border-bottom-right-radius: 50px; 
+  border-left: none; 
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/* .searchbar {
+  width: 100%;
+  padding: 10px;
+  border-radius: 50px;
+  outline: none;
+  border: none;
+  width: 350px;
+} */
+
+.search_icon {
+  /* padding: 10px; */
+  color: grey !important;
+  left: 450px;
+  top: 15px;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+}
+
+.container-fluid > ul >li > a{
+    
+    color: white !important;
+}
+
+.user_icon{
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+    color: #fff !important;
+ 
+}
+.wallet_icon{
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+    color: #fff !important;
+   
+}

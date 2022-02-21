@@ -1,0 +1,77 @@
+.card-img-top{
+    width: 280px;
+    height: 400px;
+}
+
+.card-body{
+    display: flex;
+    align-items: flex-start;
+}
+.card{
+    height: 550px;
+}
+
+.profileImg{
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+}
+
+.right_side_content{
+    margin-top: 25%;
+    border: 0.6px solid red;
+    border-radius: 25px;
+    height: 380px;
+    width: 405px;
+    background: rgba(232, 232, 232, 0.3);
+
+}
+
+.right_side_title1{
+    text-shadow: 0 3px 6px rgba(0, 0, 0, 0), 0 3px 6px rgba(0, 0, 0, 0);
+  font-family: 'Poppins';
+  font-size: 38px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: center;
+  color: #feba11;
+}
+
+.right_side_desc{
+    margin-top: 2%;
+    opacity: 0.7;
+  font-family: 'Roboto';
+  font-size: 30px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 0.9;
+  letter-spacing: normal;
+  text-align: center;
+  color: #666;
+}
+
+.iconRed{
+    background-color: #b22222;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+.speedBar{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 555px;
+    margin-left: 30%;
+    margin-top: 6%;
+    border: 0.7px solid #b22222;
+    border-radius: 15px;
+}
