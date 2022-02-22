@@ -1,0 +1,31 @@
+.collection_card_container,.collection_card{
+    max-width: 360px;
+    max-height: 300px;
+    border-radius: 15px;
+}
+
+.card_img{
+    width: 360px;
+    height: 180px;
+    border-top-left-radius:15px ;
+    border-top-right-radius:15px ;
+}
+
+.card_body{
+    background-color: #b22222;
+    color: #fff;
+    padding: 44px 22px;
+    width: 360px;
+    border-bottom-left-radius:15px ;
+    border-bottom-right-radius:15px ;
+}
+
+.live_btn{
+background: none;
+outline: none;
+border: 1px solid #fff;
+border-radius: 20px;
+width: 180px;
+height: 40px;
+color: #fff;
+}

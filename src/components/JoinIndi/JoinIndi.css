@@ -1,0 +1,51 @@
+.join_Indi_page{
+    padding-bottom: 4%;
+    background-image: linear-gradient(to bottom, #FFFFFF, #FFFFFF, #FFFFFF, #d6b9b9, #ceaaaa);
+}
+
+.join_Indi_heading_container{
+    margin-top: 3%;
+    margin-bottom: 3%;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    color: #feba11;
+}
+
+.community_icon_box{
+    margin-right: 3%;
+    background-color: #b22222;
+    border-radius: 12px;
+    height: 50px;
+    width: 50px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px;
+    color: #fff;
+}
+
+.join_community_heading{
+    color: #fff;
+}
+
+.joinIndi_image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.join_community_icons_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.joinComunity_rightSide{
+    display: flex;
+
+}
+
+.go_to_top_btn{
+    font-size: 40px !important;
+}

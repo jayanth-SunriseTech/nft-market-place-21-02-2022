@@ -1,0 +1,63 @@
+.sellCard{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 25%;
+    border: 0.6px solid red;
+    border-radius: 25px;
+    height: 380px;
+    width: 300px;
+    background: rgba(232, 232, 232, 0.3); 
+}
+
+.create_and_sell_title{
+    padding-top: 45%;
+    width: 176px;
+    height: 75px;
+    font-family: 'Poppins';
+    font-size: 29px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.21;
+    letter-spacing: normal;
+    text-align: center;
+    color: #b22222;
+}
+
+.createSell_btn_row{
+    margin-top: 4%;
+    margin-bottom: 3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.createSell_btn{ 
+    border: 1px solid #b22222;
+    background-color: #fff;
+    color: #b22222;
+    outline: none;
+    width: 180px;
+    height: 40px;
+    border-radius: 15px;
+}
+
+
+
+.sellNFTdesc{
+    width: 214px;
+    height: 181.8px;
+    margin: 75px 0 0;
+    /* font-family: Mello; */
+    font-size: 18.2px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: center;
+    color: #000;
+    margin-bottom: 20%;
+}

@@ -1,6 +1,7 @@
 .nftContainer{
     position: relative;
-    width: 100%;
+margin-top: 15%;
+margin-right: 5%;
     max-width: 400px;
 }
 .nftContainer img{
@@ -8,7 +9,7 @@
         height: auto;
         
 }
-
+ 
 .card-body{
     padding: 0;
     margin: 0;
@@ -22,7 +23,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
-    background-color: #555;
+    background-image: linear-gradient(to bottom, #eea62e, #f09321, #f28019, #f46a18, #f4501d);
     color: white;
     font-size: 16px;
     padding: 12px 24px;
@@ -30,23 +31,25 @@
     cursor: pointer;
     border-radius: 5px;
     text-align: center;
+    border-radius: 12px;
 }
 .nftContainer .price_container{
     position: absolute;
     top: 10%;
-    left: 80%;
+    left: 70%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
-    background-color: #555;
+    background-image: linear-gradient(to bottom, #eea62e, #f09321, #f28019, #f46a18, #f4501d);
     color: white;
     font-size: 15px;
     padding: 12px 24px;
     border: none;
     width: 110px;
-    /* height: 60px;  */
+    height: 40px; 
     cursor: pointer;
     border-radius: 5px;
     text-align: center;
+    border-radius: 12px;
 }
 
 /* .nftContainer .bid_btn:hover{
