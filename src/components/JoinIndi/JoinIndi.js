@@ -1,52 +1,117 @@
 import React from 'react';
 import './JoinIndi.css';
-import IndiLabCard from '../../Assets/indi-lab-card.PNG';
-import FacebookIcon from '@mui/icons-material/Facebook';
-import TwitterIcon from '@mui/icons-material/Twitter';
-import RedditIcon from '@mui/icons-material/Reddit';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import IndiLabCard from '../../Assets/Indi-lab-card-without-hand.png';
+import HandImage from '../../Assets/Indi-lab-card-hand.png';
+import TwitterIcon from '../../Assets/twitter-button.png'
+import DiscordIcon from '../../Assets/discord-button.png'
+import RedditIcon from '../../Assets/discord-button2.png'
+import FacebookIcon from '../../Assets/facebook-button.png'
+import TwitterIconHover from '../../Assets/twitter-button-hover.png'
+import DiscordIconHover from '../../Assets/discord-button-hover.png'
+import RedditIconHover from '../../Assets/discord-button2-hover.png'
+import FacebookIconHover from '../../Assets/facebook-button-hover.png'
 import KeyboardDoubleArrowUpIcon from '@mui/icons-material/KeyboardDoubleArrowUp';
+import { useState } from 'react';
 
 function JoinIndi() {
-  return (
+    const[showContactDetails,setShowContactDetails] = useState(false);
+
+    const hanldeShowContactDetails = () => {
+        setShowContactDetails(!showContactDetails)
+        console.log(showContactDetails)
+      }
+  return ( 
     <div className='join_Indi_page'>
-<div className='container-fluid'>
+<div className='container-fluid'> 
     <div className='row join_Indi_heading_container'>
         <h1 className='join_Indi_heading'>Join INDI Labs Developers Program</h1>
     </div>
     <div className='row joinIndi_image'>
-        <img src={IndiLabCard}/>
-    </div>
-    <div className='row'>
-        <div className='col-4'></div>
-        <div className='col-4'></div>
-        <div className='col-4 joinComunity_rightSide'>
-        <div className='col-6'>
-            <h3 className='join_community_heading'>Join Our Community</h3>
-            <div className='join_community_icons_container'>
-                <div className='community_icon_box'>
-                <FacebookIcon />
+        <div className={showContactDetails ? 'contact_Details_not_active':'contact_Details_content'}>
+        <img className='IndiCardLab_Img' src={IndiLabCard}/>
+        <img className={showContactDetails ? 'hand_img_not_active':'hand_img_active'} onClick={hanldeShowContactDetails} src={HandImage}/>
+        </div>
+        <div className={showContactDetails ? 'contact_Details_active':'contact_Details_not_active'}>
+        <div className='contactDetails_contianer container-fluid'>
+            <div className='row'>
+                <div className='col-12'>
+                    <p className='indiLabsDesc'> INDI Labs (not for profit) ae committed to building the infrastructure required for large-scale adoption of NFTs &#9400; Cryptocurrencies on the Indigena market Eco-System. INDI Labs Developer Program, funded by the the INDI Labs allows developers to get involved in the Indigena ecosystem while taking on technological challenges to enhance their skills.Developers around the world are encouraged to join the INDI Labs Developer Program to help create exciting new projects on the ecosystem</p>
                 </div>
-                <div className='community_icon_box'>
-                <LinkedInIcon/>
+            </div>
+            <div className='row mobile_contact_us_row' >
+                <div className='col-6' style={{margin:0,padding:0}}>
+                <span className='tojoin'>To join the Indi Labs Developers Program <br/> Fill out this form</span>
                 </div>
-                <div className='community_icon_box'>
-                <TwitterIcon/>
-                </div>
-                <div className='community_icon_box'>
-                <RedditIcon/>
+                <div className='col-6' style={{display:'inline-block',position:'relative'}}>
+                <button className='contact_us_btn' onClick={hanldeShowContactDetails}>Contact us</button>
+                <button className='wrk_tgthr_btn' >Let's work together!</button>
                 </div>
             </div>
         </div>
-        <div className='col-6'>
-        <KeyboardDoubleArrowUpIcon className="go_to_top_btn"/>
+        <img className={showContactDetails ? 'hand_img_not_active':'hand_img_active'} onClick={hanldeShowContactDetails} src={HandImage}/>
         </div>
+    </div>
+    <div className='row' style={{marginTop:'10%'}}>
+        <div className='col-1'></div>
+        <div className='col-6'></div>
+        <div className='col-5'>
+            <div className='row'>
+            <div className='col-6 joinComunity_rightSide'>
+        <div className='row mb-3'>
+        <h3 className='join_community_heading'>Join Our Community</h3>
+        </div>
+        <div className='row'>
+
+        <div className='join_community_icons_container'>
+            <div className='img-box1'>
+            <img className='socialIcon_img1' src={FacebookIcon} alt='socialIcon'/>
+            <img className='socialIcon_hover_img1' src={FacebookIconHover} alt='socialIcon'/>
+            </div>
+            <div className='img-box2'>
+            <img className='socialIcon_img2' src={DiscordIcon} alt='socialIcon'/>
+            <img className='socialIcon_hover_img2' src={DiscordIconHover} alt='socialIcon'/>
+            </div>
+            <div className='img-box3'>
+            <img className='socialIcon_img3' src={TwitterIcon} alt='socialIcon'/>
+            <img className='socialIcon_hover_img3' src={TwitterIconHover} alt='socialIcon'/>
+            </div>
+            <div className='img-box4'>
+            <img className='socialIcon_img4' src={RedditIcon} alt='socialIcon'/>
+            <img className='socialIcon_hover_img4' src={RedditIconHover} alt='socialIcon'/>
+            </div>
+        </div>
+        <div className='join_community_icons_container_mobile'>
+            
+            <img className='socialIcon_img1' src={FacebookIcon} alt='socialIcon'/>
+            
+            
+            
+            <img className='socialIcon_img2' src={DiscordIcon} alt='socialIcon'/>
+           
+            
+            
+            <img className='socialIcon_img3' src={TwitterIcon} alt='socialIcon'/>
+            
+            
+          
+            <img className='socialIcon_img4' src={RedditIcon} alt='socialIcon'/>
+            
+            
+        </div>
+        </div>
+    </div>
+    <div className='col-6'>
+    <KeyboardDoubleArrowUpIcon className="go_to_top_btn"/>
+    </div>
+            </div>
+        </div>
+        
         </div>
        
         
     </div>
 </div>
-    </div>
+    
   )
 }
 

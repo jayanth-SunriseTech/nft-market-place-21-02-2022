@@ -23,6 +23,9 @@ function TopTrending() {
           <div className='col-1'></div>
           
         </div>
+        <div className="row btn_row" >
+            <button className="section-bottom-button trending_btn">Trending</button>
+        </div>
       </div>
     </div>
   )

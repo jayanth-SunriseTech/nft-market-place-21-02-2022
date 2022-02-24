@@ -36,7 +36,7 @@ let TopCollectionsList = [
     {
         collectionName:'Johnny Doe',
         desc:'Enter the sandbox and become neighbour of Johnny Doe',
-        collectionImage:collectionImage6,
+        collectionImage:collectionImage4,
     },
     
   

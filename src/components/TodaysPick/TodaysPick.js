@@ -8,12 +8,12 @@ function TodaysPick() {
     <div className="Todays_Picks_page">
       <div className="container-fluid">
           <div className="row todaysPicks_heading_container">
-              <h1 className="topPicks_heading">Today's Picks</h1>
+              <h1 className="topPicks_heading">Today's Pick</h1>
           </div>
           <div className="row" >
             <div className='col-1'></div>
             <div className='col-10'>
-              <div className='row'>
+              <div className='row'> 
             {NFTCardData.map((e)=>
           <NFTCard nftImage={e.nftImage} price={e.price} />
           )}
@@ -22,8 +22,8 @@ function TodaysPick() {
             <div className='col-1'></div>
         
         </div>
-        <div className="row todaysPicks_btn_row" >
-            <button className="collection_btn">Marketplace</button>
+        <div className="row btn_row" >
+            <button className="section-bottom-button">Marketplace</button>
         </div>
       </div>
     </div>

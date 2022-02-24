@@ -15,6 +15,6 @@ function ResourcesStartedCard({image}) {
     </div>
     </div>
   );
-}
+} 
 
 export default ResourcesStartedCard;

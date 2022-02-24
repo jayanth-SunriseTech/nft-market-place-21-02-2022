@@ -4,6 +4,17 @@ margin-top: 15%;
 margin-right: 5%;
     max-width: 400px;
 }
+
+
+.NFT_card_body{
+box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); 
+transition: all 0.3s;
+}
+
+.NFT_card_body:hover{
+    box-shadow: 0 10px 18px 0 rgba(0,0,0,0.4);
+}
+
 .nftContainer img{
         width: 100%;
         height: auto;
@@ -33,6 +44,10 @@ margin-right: 5%;
     text-align: center;
     border-radius: 12px;
 }
+
+.mobile_bid{
+    display: none;
+}
 .nftContainer .price_container{
     position: absolute;
     top: 10%;
@@ -56,3 +71,55 @@ margin-right: 5%;
 background-color: #555;
 } */
 
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+    .nftCard{
+        width: 121px !important;
+        height: 138px !important;
+    }
+
+    .nftContainer .bid_btn {
+        position: absolute;
+        top: 85%;
+        left: 32.5%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        background-image: linear-gradient(to bottom, #eea62e, #f09321, #f28019, #f46a18, #f4501d);
+        color: white;
+        font-size: 10px;
+        width: 45px;
+        height: 25px;
+        padding: 0px 0px;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+        text-align: center;
+        border-radius: 12px;
+    }
+
+    .nftContainer .price_container {
+        position: absolute;
+        top: 15%;
+        left: 80%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        background-image: linear-gradient(to bottom, #eea62e, #f09321, #f28019, #f46a18, #f4501d);
+        color: white;
+        font-size: 9px;
+        padding: 3px 0px;
+        border: none;
+        width: 40px;
+        height: 20px;
+        cursor: pointer;
+        border-radius: 5px;
+        text-align: center;
+        border-radius: 12px;
+    }
+
+    .pc_bid{
+        display: none;
+    }
+    .mobile_bid{
+        display: block;
+    }
+}

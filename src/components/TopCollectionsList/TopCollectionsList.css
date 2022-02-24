@@ -3,12 +3,12 @@
     color: #b22222;
 }
 
-.topCollections_heading_container{
+/* .topCollections_heading_container{
     margin-top: 3%;
     display: flex;
     justify-content: center;
     align-items: center;
-}
+} */
 
 .listItem_container{
     margin-top: 5%;
@@ -31,14 +31,14 @@
     width: 40px;
     height: 40px;
 }
-
+/* 
 .topCollections_btn_row{
     margin-top: 4%;
-    margin-bottom: 3%;
+    margin-bottom: 3%; 
     display: flex;
     justify-content: center;
     align-items: center;
-}
+} */
 
 .collectionName{
   font-size: 19.2px;
@@ -50,6 +50,17 @@
   color: #333;
   width: 110px;
   height: 19px;
+  transition: all 0.3s;
+}
+
+.listItem_container:hover .collectionName {
+    font-weight: bold;
+}
+.listItem_container:hover .userName {
+    font-weight: bold;
+}
+.listItem_container:hover  .collection_pts {
+    font-weight: bold;
 }
 
 .userName{
@@ -63,5 +74,9 @@
   letter-spacing: normal;
   text-align: left;
   color: #333;
+  transition: all 0.1s;
 }
 
+.collection_pts{
+    transition: all 0.3s;
+}

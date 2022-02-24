@@ -5,22 +5,22 @@ function Footer() {
   return (
     <div className='footer_Page'>
         <div className='row'>
-            <div className='col-1'></div>
-            <div className='col-6'>
-                <div className='row'>
-                    <div className='col-1'></div>
-                    <div className='col-2 listItem_content'>
+                    <div className='col-md-1'></div>
+           
+            <div className='col-md-6 col-12'>
+                <div className='row mobile_footer'>
+                    <div className='col-3 listItem_content'> 
                         <ul className='footer_list'>
                             <li className='footer_list_item'>Resources</li>
                             <li className='footer_list_item'>Learning Tools</li>
                             <li className='footer_list_item'>Help Center</li>
-                            <li className='footer_list_item'>Partners</li>
+                            <li className='footer_list_item'>Partners</li> 
                             <li className='footer_list_item'>Newsletters</li>
                             <li className='footer_list_item'>Our story</li>
                         </ul>
                     </div>
-                    <div className='col-1'></div>
-                    <div className='col-2 listItem_content'>
+                    
+                    <div className='col-3 listItem_content'>
                     <ul className='footer_list'>
                             <li className='footer_list_item'>Marketplace</li>
                             <li className='footer_list_item'>Explore</li>
@@ -28,8 +28,8 @@ function Footer() {
                             
                         </ul>
                     </div>
-                    <div className='col-1'></div>
-                    <div className='col-2 listItem_content'>
+                    
+                    <div className='col-3 listItem_content'>
                     <ul className='footer_list'>
                             <li className='footer_list_item'>My Account</li>
                             <li className='footer_list_item'>Profile</li>
@@ -38,8 +38,8 @@ function Footer() {
                             <li className='footer_list_item'>Settings</li>
                         </ul>
                     </div>
-                    <div className='col-1'></div>
-                    <div className='col-2 listItem_content'>
+                    
+                    <div className='col-3 listItem_content'>
                     <ul className='footer_list'>
                             <li className='footer_list_item'>Legal</li>
                             <li className='footer_list_item'>Terms &#x26; Conditions</li>
@@ -50,10 +50,10 @@ function Footer() {
                     </div>
                 </div>
             </div>
-            <div className='col-5'></div>
+            <div className='col-md-6 ' ></div>
         </div>
-        <div className='row footer_copyRight_con'>
-            <h4>Copyright &#9400;  2021. All Rights Reserved.</h4>
+        <div className='row footer_copyRight_container'>
+            <span>Copyright &#9400;  2021. All Rights Reserved.</span>
         </div>
     </div>
   )

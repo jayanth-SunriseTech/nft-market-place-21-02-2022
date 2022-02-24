@@ -1,21 +1,27 @@
 import React from "react";
-import artcard1 from "../../Assets/art-card.PNG";
-import artcard2 from "../../Assets/art-card-2.PNG";
+import artcard1 from "../../Assets/rounded-rectangle-card-2.png";
+import artcard2 from "../../Assets/rounded-rectangle-card-1.png";
+import Hand from "../../Assets/Indi-lab-card-hand.png";
 import fireIcon from "../../Assets/fire-icon.png";
 import TodayIcon from '@mui/icons-material/Today';
 import EditIcon from '@mui/icons-material/Edit';
-import "../../Assets/art-card-2.PNG";
 import "./ArtReflection.css";
+import { useState } from "react";
 
 function ArtReflection() {
+  const[showGallery,setShowGallery] = useState(false);
+
+  const hanldeShowGallery = () => {
+    setShowGallery(!showGallery)
+  }
   return (
     <div className="artReflection_section">
-      <div className="container-fluid">
+      <div className="container-fluid"> 
         <div className="row" style={{margin:0}}>
           <div className="col-md-1 col-lg-1"></div>
-          <div className="col-md-6 col-lg-6" style={{marginTop:'5%'}}>
-            <div className="row" >
-              <div class="card art_reflection_card" style={{ width: "18rem" }}>
+          <div className="col-md-6 col-lg-6" style={{marginTop:'5%',padding:0}}>
+            <div className="row artCard"  >
+              <div class="card art_reflection_card " >
                 <img class="card-img-top" src={artcard1} alt="Card image cap" />
                 <div class="card-body">
                   <img
@@ -28,7 +34,7 @@ function ArtReflection() {
                   </div>
                 </div>
               </div>
-              <div class="card art_reflection_card mt-5 ml-5" style={{ width: "18rem"}}>
+              <div class="card art_reflection_card  mt-5 " >
                 <img class="card-img-top" src={artcard2} alt="Card image cap" />
                 <div class="card-body">
                   <img
@@ -40,23 +46,28 @@ function ArtReflection() {
                   <span className="usernmae">@KanyeWe</span>
                   </div>
                 </div>
-              </div>
+              </div> 
             </div>
           </div>
           <div className="col-md-5 col-lg-5 right_side_main_content"  style={{marginTop:'5%'}}>
-            <div className="right_side_content" >
+            <div className={showGallery ? 'right_side_content_not_active':'right_side_content'}>
             <h4 className="ourArtHeading">Our Art is Our Reflection</h4>
             <p className="right_side_desc"> 
               Our art tells our story and as indigenous people this has been
               passed down from generation to generation. Our art is our
-              expression of our cultural being.<br/> <span className="powerToArtist"> Power to the Artist</span>
+              expression of our cultural being.<br/> <p className="powerToArtist"> Power to the Artist</p>
             </p>
+            <img className="section-2-hand-img" onClick={hanldeShowGallery} src={Hand} alt='handPng'/>
+            </div>
+            <div className={showGallery ? 'right_side_content_active':'right_side_content_not_active'}>
+            <button className="showGallery_btn">Gallery</button>
+            <img className="section-2-hand-img" onClick={hanldeShowGallery} src={Hand} alt='handPng'/>
             </div>
           </div>
         </div>
         <div className="row speedBar">
           <div className="iconRed">
-    <img src={fireIcon} alt='fire-icon'/>
+    <img src={fireIcon} alt='fire-icon'/> 
           </div>
           <div className="iconRed">
     <TodayIcon />

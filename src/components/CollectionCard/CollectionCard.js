@@ -4,7 +4,7 @@ import "./CollectionCard.css";
 
 function CollectionCard({collectionName,desc,collectionImage}) {
   return (
-    <div className='col-4' style={{height:'440px'}}>
+    <div className='col-md-4 col-lg-4 col-12' style={{height:'440px'}}>
    <div className='collection_card_container'>
     <div class="card collection_card">
     <img class="card_img" src={collectionImage} alt="Card image cap"/>
