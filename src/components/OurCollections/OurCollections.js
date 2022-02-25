@@ -21,7 +21,7 @@ function OurCollections() {
             <div className="row mobile_carousel">
               <div className="row collections_pc">
                 {OurCollectionsList.map((e) => (
-                  <CollectionCard
+                  <CollectionCard 
                     collectionName={e.collectionName}
                     desc={e.desc}
                     collectionImage={e.collectionImage}

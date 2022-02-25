@@ -3,15 +3,21 @@ import Filter from '../../Assets/filter.png'
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import SearchIcon from '@mui/icons-material/Search';
 import FilterListIcon from '@mui/icons-material/FilterList';
+import Filters from "./Filters";
 import './FilterNav.css'
 
-function FilterNav() {
+function FilterNav({ showFilter , setShowFilter }) {
+    
+
+    const handleShowFilter = () => {
+        setShowFilter(!showFilter)
+    }
   return (
     <div className='container filter_nav_container' >
-        <div className='row'>
+        <div  className='row filterNavRow'>
             
             <div className='col-md-12 col-lg-12 filterSearchContainer'>
-                <div className='filterIcon'>
+                <div onClick={handleShowFilter} className='filterIcon'>
                 <FilterListIcon/>
                 </div>
                 <div className='searchBar'>
@@ -32,6 +38,11 @@ function FilterNav() {
                 </div>
             </div>
             
+        </div>
+        <div className='row filterRow'>
+        {showFilter ? (<>
+        <Filters className="filterOnPage" showFilter={showFilter}  setShowFilter={setShowFilter}/>
+        </>) : ("")}
         </div>
     </div>
   )

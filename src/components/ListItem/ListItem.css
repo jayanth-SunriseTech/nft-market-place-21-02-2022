@@ -1,0 +1,36 @@
+
+.listItemRow1{
+    margin-top: 5%;
+}
+/* .fixedContainer{
+    width: 220px;
+    height: 220px;
+    border: 1px solid #333;
+    border-radius: 19px;
+    margin-left: 8%;
+    
+} */
+
+.fixedContainer {
+    width: 220px;
+    height: 220px;
+    
+    border-radius: 19px;
+    margin-left: 5%;
+}
+
+.auctionContainer{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    
+}
+
+.listItem_heading_container{
+    display: flex;
+    align-items: flex-start;
+}
+
+.listItem_heading_container h2 {
+    font-size: 45px;
+}
