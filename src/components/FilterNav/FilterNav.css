@@ -40,11 +40,14 @@
 }
 
 .filter_nav_container {
+  display: inline-block;
   box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
   border-radius: 5px;
   margin-top: 1%;
-  padding: 1%;
+  padding: 1% 0 0 0;
   height: 80px;
+  width: 1220px !important;
+  margin-left: 140px;
 }
 
 .filterSearchContainer {
@@ -133,9 +136,10 @@
 }
 
 .filterOtpions_container {
-  max-width: 376px;
+  max-width: 300px;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); 
   z-index: 3;
+  background-color: white;
 }
 
 .filterOtpions_container .CurrencyInput {
@@ -375,9 +379,95 @@
 
 .filterRow{
   z-index: 99;
-  margin-left: -70%;
+  margin-left: -80% !important;
   margin-top: 4%;
 }
 
+.searchBarMobile{
+  display: none;
+}
+
+
+
+
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+  .filter_nav_container {
+      display: inline-block;
+      box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
+      border-radius: 5px;
+      margin-top: 1%;
+      padding: 4% 0 0 0 !important;
+      height: 66px !important;
+      width: 271px !important;
+      margin-left: 45px;
+  }
+
+  .searchBar{
+    display: none;
+  }
+
+  .searchBarMobile{
+    display: block;
+}
+
+.filtersearchbar_container {
+  margin: 20px 20px 20px 45px !important;
+  width: 250px !important;
+  height: 33px !important;
+}
+
+  .filtersearchbar_container {
+      margin-left: 12%;
+      width: 206px;
+  }
+
+  .filter_btns {
+    border: 1px solid #b22222;
+    background-color: #fff;
+    outline: none;
+    width: 81px !important;
+    font-size: 10px !important;
+    height: 27px !important;
+    border-radius: 20px;
+    color: #b22222;
+    box-shadow: 0px 20px 18px -14px rgb(0 0 0);
+}
+
+.filtersearchbar_container .filtersearchbar {
+  width: 100%;
+  padding: 5px;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  outline: none;
+  border-right: none;
+  border: none;
+  color: #9dbfaf;
+  background-color: rgba(0, 0, 0, 0.1);
+  height: 38px !important;
+}
+
+.filtersearchbar_container .search_btn {
+  width: 40px;
+  height: 38px !important;
+  text-align: center;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.1);
+  outline: none;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  border-left: none;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  padding-right: -9%;
+}
+
+.filterRow {
+  z-index: 99;
+  margin-left: -7% !important;
+  margin-top: 4%;
+}
+}
 
 

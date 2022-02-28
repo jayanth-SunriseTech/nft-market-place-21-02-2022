@@ -27,6 +27,11 @@ import { useContext } from "react";
 import MenuBoard from "./components/MenuBoard/MenuBoard";
 import MarketPlaceMain from "./MarketPlaceMain/MarketPlaceMain";
 import ListItem from "./components/ListItem/ListItem";
+import Auction from "./components/Auction/Auction";
+import FixedPrice from "./components/FixedPrice/FixedPrice";
+import CollectionProfile from "./components/CollectionProfileCard/CollectionProfileCard";
+import CollectionProfilePage from "./components/CollectionProfileCard/CollectionProfilePage/CollectionProfilePage";
+import ProfilePage from "./components/ProfilePage/ProfilePage";
 
 const App = () => {
 
@@ -53,9 +58,13 @@ const setShowFilter = uiContext.setShowFilter
                <Routes>
                <Route exact path="/" element={<Home/>}/>
                <Route exact path="/filter" element={<FilterNav showFilter={showFilter}  setShowFilter={setShowFilter} />}/>
-               <Route exact path="/menu" element={<MenuBoard/>}/>
-               <Route exact path="/list" element={<ListItem/>}/>
-               <Route exact path="/collection" element={<MarketPlaceMain showFilter={showFilter}  setShowFilter={setShowFilter}/>}/>
+               <Route exact path="/menuboard" element={<MenuBoard/>}/>
+               <Route exact path="/list-item-sale" element={<ListItem/>}/>
+               <Route exact path="/marketplace" element={<MarketPlaceMain showFilter={showFilter}  setShowFilter={setShowFilter}/>}/>
+               <Route exact path="/auction" element={<Auction showFilter={showFilter}  setShowFilter={setShowFilter}/>}/>
+               <Route exact path="/fixed-price" element={<FixedPrice showFilter={showFilter}  setShowFilter={setShowFilter}/>}/>
+               <Route exact path="/collection-profile" element={<CollectionProfilePage showFilter={showFilter}  setShowFilter={setShowFilter}/>}/>
+               <Route exact path="/user-profile" element={<ProfilePage showFilter={showFilter}  setShowFilter={setShowFilter}/>}/>
                </Routes>
               
                </BrowserRouter>

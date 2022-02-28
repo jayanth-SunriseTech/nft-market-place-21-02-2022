@@ -1,0 +1,35 @@
+
+
+
+.FixedPrice_page{
+    margin-top: 5%;
+}
+
+.form-group{
+    margin-bottom: 5%;
+}
+
+.input_label{
+    text-align: left;
+}
+
+.durationInput{
+    width: 100%;
+}
+
+.section-bottom-button{
+    border: 1px solid #b22222;
+    background-color: #fff;
+    outline: none;
+    width: 180px;
+    height: 40px;
+    border-radius: 12px;
+    color: #b22222;
+    box-shadow: 0px 20px 18px -14px rgba(0,0,0,1);
+}
+
+ .section-bottom-button:hover{
+    background-color: #b22222;
+    color: white;
+    
+}

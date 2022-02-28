@@ -1,0 +1,175 @@
+
+.CollectionProfile_card{
+height: 850px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); 
+  padding: 0 0 40px 0;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+
+.CollectionSocialIcon_Container{
+  width: 1240px;
+  padding: 20px;
+}
+
+.profile-block {
+    margin: auto;
+    position: relative;
+    width: 100%;
+  }
+  .cover-container{
+    background-image:url(https://akm-img-a-in.tosshub.com/indiatoday/images/story/202005/keyboard-5017973_1920.jpeg?NxXWUVUGjpEzDYZAbAUmrfWMvpSA0qPE&size=770:433) ;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+  }
+  .profile-block-thumb{
+    
+    display: block;
+    height: 315px;
+    overflow: hidden;
+    position: relative;
+    text-decoration: none;
+  }
+  .profile-block-menu {
+    border: 1px solid #d3d6db;
+    border-radius: 0 0 3px 3px;
+  }
+  .profile-img a{
+    bottom: 0px;
+    box-shadow: none;
+    top: 195px;
+    display: block;
+    left: 545px;
+    padding: 1px;
+    position: absolute;
+    height: 160px;
+    width: 160px;
+    /* background: rgba(0, 0, 0, 0.3) none repeat scroll 0 0; */
+    z-index: 9;
+  }
+  .profile-img img {
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: 0 1px 1px rgb(0 0 0 / 7%);
+    height: 158px;
+    padding: 5px;
+    width: 158px;
+  }
+  .profile-name {
+    bottom: 216px;
+    left: 199px;
+    position: absolute;
+}
+  .profile-name h2 {
+    color: #010000;
+    font-size: 45px;
+    font-weight: 600;
+    line-height: 30px;
+    left: 391px;
+    top: 42px;
+    max-width: 275px;
+    position: relative;
+ 
+  }
+  .profile-block-menu{
+    height: 44px;
+    position: relative;
+    width:100%;
+    overflow:hidden;
+   }
+  .block-menu {
+    clear: right;
+    padding-left: 205px;
+  }
+  .block-menu ul{
+      margin:0;
+      padding:0;
+  }
+  .block-menu ul li{
+      display:inline-block;
+  }
+  .block-menu ul li a {
+    border-right: 1px solid #e9eaed;
+    float: left;
+    font-size: 14px;
+    font-weight: bold;
+    height: 42px;
+    line-height: 3.0;
+    padding: 0 17px;
+    position: relative;
+    vertical-align: middle;
+    white-space: nowrap;
+    color:#4b4f56;
+    text-transform:capitalize;
+  }
+  .block-menu ul li:first-child a{
+    border-left: 1px solid #e9eaed;
+  }
+
+  .profile-details-columns{
+      display: flex;
+      
+      justify-content: space-evenly;
+  }
+
+  .profile-details-group{
+    position: relative;
+    top: 100px;
+  }
+
+  .profile-slogan-container{
+    position: relative;
+    top: 190px;
+    left: 535px;
+  }
+  .profile-slogan-container h2{
+    font-size: 40px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.43;
+    letter-spacing: normal;
+    text-align: left;
+    color: #333;
+    opacity: 0.7;
+  }
+
+  .asset-key span{
+    font-family: 'poppins';
+    font-size: 26.4px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 2.59;
+    letter-spacing: normal;
+    text-align: left;
+    color: #bb1d19;
+  }
+
+  .asset-key .user{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); 
+  }
+
+  .asset-value{
+    font-family: 'poppins';
+  font-size: 18px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 3.17;
+  letter-spacing: normal;
+  text-align: left;
+  color: #333;
+  }
+
+  .profile-slogan-container h2 {
+    font-size: 40px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.43;
+  letter-spacing: normal;
+  text-align: left;
+  color: #333;
+  }

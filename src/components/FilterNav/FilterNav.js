@@ -13,10 +13,11 @@ function FilterNav({ showFilter , setShowFilter }) {
         setShowFilter(!showFilter)
     }
   return (
-    <div className='container filter_nav_container' >
+    <div className='container-fluid filter_nav_container' >
         <div  className='row filterNavRow'>
+            <div className='col-sm-1'></div>
             
-            <div className='col-md-12 col-lg-12 filterSearchContainer'>
+            <div className='col-md-12 col-lg-12 col-sm-10 filterSearchContainer'>
                 <div onClick={handleShowFilter} className='filterIcon'>
                 <FilterListIcon/>
                 </div>
@@ -30,6 +31,7 @@ function FilterNav({ showFilter , setShowFilter }) {
                         </div>
                         </div>
                 </div>
+                
                 <div className='sortBy_btn_container'>
                     <button className='filter_btns sortBy_btn'>Sort by <span className='dropDownIcon'><KeyboardArrowDownIcon/></span></button>
                 </div>
@@ -37,6 +39,7 @@ function FilterNav({ showFilter , setShowFilter }) {
                     <button className='filter_btns filterCollection_btn'>Collections</button>
                 </div>
             </div>
+            <div className='col-sm-1'></div>
             
         </div>
         <div className='row filterRow'>
