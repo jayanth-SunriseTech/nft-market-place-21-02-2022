@@ -19,8 +19,8 @@ function ListItem() {
           </div>
         </div>
         <div className="row">
-          <div className="col-lg-2"></div>
-          <div className="col-lg-6 col-12 auctionContainer">
+          <div className="col-lg-1"></div>
+          <div className="col-lg-7 col-12 auctionContainer">
            
                 <img className="fixedContainer" src={Card1}/>
              
@@ -28,9 +28,9 @@ function ListItem() {
             <img className="fixedContainer smallImg" src={Card2}/>
             
           </div>
-          <div className="col-lg-3">
+          <div className="col-lg-3 previeewContainer">
           <div className="col-lg-10 listItem_heading_container previewHeading">
-            <h2>Preview</h2>
+            <h2 className="previewHeading">Preview</h2>
           </div>
             <div className="listItemNFTConainer">
               <img src={NFT} />

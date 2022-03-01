@@ -61,9 +61,8 @@ function MenuBoardDropDown({ showFilter , setShowFilter }) {
           {/* <KeyboardArrowDownIcon/> */}
           <img src={dropDownIcon} />
           </div>
-          <div className={firstDropDown ? "dropDown_content firstdropDown_content_active":"firstdropDown_content"} >
-              <button className="status_btn">Fixed Price</button>
-              <button className="status_btn">Auction</button>
+          <div className={firstDropDown ? "menuBoarddropDown_content firstdropDown_content_active":"firstdropDown_content"} >
+              <p>"Fragile II" is the original oil painting in size 30x30cm. If you are interested in a physical version of this painting, please contact me.</p>
           </div>
       </div>
       <div onClick={handleSecond} className={secondDropDown ? "row dropdownRow firstdropDown_active":"row dropdownRow firstdropDown"}>
@@ -77,16 +76,12 @@ function MenuBoardDropDown({ showFilter , setShowFilter }) {
           {/* <KeyboardArrowDownIcon/> */}
           <img src={dropDownIcon} />
           </div>
-          <div  className={secondDropDown ? "dropDown_content seconddropDown_content_active container-fluid":" dropDown_content seconddropDown_content container-fluid"} >
-              <div className="row currencyRow">
-              <input type='text' className="CurrencyInput" placeholder="United States Dollar (USD)" />
-              </div>
-              <div className="row minRow">
-              <input type='text' className="sortInput" placeholder="Min" />
-              <span>To</span>
-              <input type='text' className="sortInput" placeholder="Max" />
-              </div>
-              <button className="filterapply_btn">Apply</button>
+          <div  className={secondDropDown ? "menuBoarddropDown_content seconddropDown_content_active container-fluid":" dropDown_content seconddropDown_content container-fluid"} >
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+velit esse cillum dolore eu fugiat nulla pariatur.</p>
           </div>
       </div>
       <div onClick={handleThird} className={thirdDropDown ? "row dropdownRow thirddropDown_active":"row dropdownRow thirddropDown"}>
@@ -100,13 +95,12 @@ function MenuBoardDropDown({ showFilter , setShowFilter }) {
           {/* <KeyboardArrowDownIcon/> */}
           <img src={dropDownIcon} />
           </div>
-          <div className={thirdDropDown ? "dropDown_content thirddropDown_content_active ":" dropDown_content thirddropDown_content "} >
-             <input type='radio' id="image" value='Image' name="file"/>
-             <label for='image'>Image</label> 
-             <input type='radio' id="Video" value='Video' name="file"/>
-             <label for='Video'>Video</label> 
-             <input type='radio' id="Audio" value='Audio' name="file"/>
-             <label for='Audio'>Aduio</label> 
+          <div className={thirdDropDown ? "menuBoarddropDown_content thirddropDown_content_active ":" dropDown_content thirddropDown_content "} >
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+velit esse cillum dolore eu fugiat nulla pariatur.</p>
              
           </div>
       </div>
@@ -121,9 +115,12 @@ function MenuBoardDropDown({ showFilter , setShowFilter }) {
           {/* <KeyboardArrowDownIcon/> */}
           <img src={dropDownIcon} />
           </div>
-          <div className={fourthDropDown ? "dropDown_content firstdropDown_content_active":"firstdropDown_content"} >
-              <button className="status_btn">Fixed Price</button>
-              <button className="status_btn">Auction</button>
+          <div className={fourthDropDown ? "menuBoarddropDown_content firstdropDown_content_active":"firstdropDown_content"} >
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+velit esse cillum dolore eu fugiat nulla pariatur.</p>
           </div>
       </div>
       <div onClick={handleFifth} className={fifthDropDown ? "row dropdownRow fourthdropDown_active":"row dropdownRow fourthdropDown"}>
@@ -137,9 +134,12 @@ function MenuBoardDropDown({ showFilter , setShowFilter }) {
           {/* <KeyboardArrowDownIcon/> */}
           <img src={dropDownIcon} />
           </div>
-          <div className={fifthDropDown ? "dropDown_content firstdropDown_content_active":"firstdropDown_content"} >
-              <button className="status_btn">Fixed Price</button>
-              <button className="status_btn">Auction</button>
+          <div className={fifthDropDown ? "menuBoarddropDown_content firstdropDown_content_active":"firstdropDown_content"} >
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+velit esse cillum dolore eu fugiat nulla pariatur.</p>
           </div>
       </div>
       </div>

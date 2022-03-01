@@ -1,16 +1,23 @@
 import React from 'react'
-import Filter from '../../Assets/filter.png'
+import Filter from '../../Assets/filter-icon.png'
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import SearchIcon from '@mui/icons-material/Search';
 import FilterListIcon from '@mui/icons-material/FilterList';
 import Filters from "./Filters";
 import './FilterNav.css'
+import { useState } from 'react';
 
 function FilterNav({ showFilter , setShowFilter }) {
     
+    const[showSort,setShowSort] = useState(false);
+
 
     const handleShowFilter = () => {
         setShowFilter(!showFilter)
+    }
+
+    const handleSort = () => {
+        setShowSort(!showSort)
     }
   return (
     <div className='container-fluid filter_nav_container' >
@@ -19,7 +26,8 @@ function FilterNav({ showFilter , setShowFilter }) {
             
             <div className='col-md-12 col-lg-12 col-sm-10 filterSearchContainer'>
                 <div onClick={handleShowFilter} className='filterIcon'>
-                <FilterListIcon/>
+                
+                <img src={Filter} alt='filter-icon'/>
                 </div>
                 <div className='searchBar'>
                 <div className="filtersearchbar_container">
@@ -33,8 +41,12 @@ function FilterNav({ showFilter , setShowFilter }) {
                 </div>
                 
                 <div className='sortBy_btn_container'>
-                    <button className='filter_btns sortBy_btn'>Sort by <span className='dropDownIcon'><KeyboardArrowDownIcon/></span></button>
+                    <button className='filter_btns sortBy_btn'>Sort by </button>
+                    <div className='sortBy_Container'>
+
+                    </div>
                 </div>
+                
                 <div className='collections_btn_container'>
                     <button className='filter_btns filterCollection_btn'>Collections</button>
                 </div>

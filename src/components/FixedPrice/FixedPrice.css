@@ -33,3 +33,29 @@
     color: white;
     
 }
+
+
+
+.form-check-input:checked { 
+    background-color: #b22222;
+    border-color: #b22222;
+
+}
+
+.form-control:focus {
+    border-color: #FF0000;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(255, 0, 0, 0.6);
+    background-color: #b22222;
+  }
+
+
+  .form-switch .form-check-input:focus{
+    border-color: #FF0000;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(255, 0, 0, 0.6);
+  }
+
+
+  .form-select{
+    background-image: url("../../Assets/Icon-arrow-dropdown.png");
+    background-size: 15px 15px;
+  }

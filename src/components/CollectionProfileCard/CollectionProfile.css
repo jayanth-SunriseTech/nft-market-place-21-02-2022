@@ -56,12 +56,12 @@ height: 850px;
     padding: 5px;
     width: 158px;
   }
-  .profile-name {
+  .collection-profile-name {
     bottom: 216px;
     left: 199px;
     position: absolute;
 }
-  .profile-name h2 {
+  .collection-profile-name h2 {
     color: #010000;
     font-size: 45px;
     font-weight: 600;
@@ -107,23 +107,23 @@ height: 850px;
     border-left: 1px solid #e9eaed;
   }
 
-  .profile-details-columns{
+  .collection-profile-details-columns{
       display: flex;
       
       justify-content: space-evenly;
   }
 
-  .profile-details-group{
+  .collection-profile-details-group{
     position: relative;
     top: 100px;
   }
 
-  .profile-slogan-container{
+  .collection-profile-slogan-container{
     position: relative;
     top: 190px;
     left: 535px;
   }
-  .profile-slogan-container h2{
+  .collection-profile-slogan-container h2{
     font-size: 40px;
     font-weight: bold;
     font-stretch: normal;
@@ -135,7 +135,7 @@ height: 850px;
     opacity: 0.7;
   }
 
-  .asset-key span{
+  .collection-asset-key span{
     font-family: 'poppins';
     font-size: 26.4px;
     font-weight: 500;
@@ -147,11 +147,11 @@ height: 850px;
     color: #bb1d19;
   }
 
-  .asset-key .user{
+  .collection-asset-key .user{
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); 
   }
 
-  .asset-value{
+  .collection-asset-value{
     font-family: 'poppins';
   font-size: 18px;
   font-weight: 500;
@@ -159,11 +159,14 @@ height: 850px;
   font-style: normal;
   line-height: 3.17;
   letter-spacing: normal;
-  text-align: left;
+  
   color: #333;
+  display: flex;
+  justify-content: center; 
+  align-items: center;
   }
 
-  .profile-slogan-container h2 {
+  .collection-profile-slogan-container h2 {
     font-size: 40px;
   font-weight: bold;
   font-stretch: normal;
@@ -172,4 +175,129 @@ height: 850px;
   letter-spacing: normal;
   text-align: left;
   color: #333;
+  }
+ 
+
+  .social-img{
+    margin-left: 1%;
+  }
+
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+
+    .CollectionProfile_card {
+      height: 380px;
+      box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
+      padding: 0 0 40px 0;
+      overflow: hidden;
+      border-radius: 12px;
+  }
+
+    .profile-block-thumb {
+      display: block;
+      height: 115px;
+      overflow: hidden;
+      position: relative;
+      text-decoration: none;
+      object-fit: contain;
+  }
+
+  .profile-img a {
+    bottom: 0px;
+    box-shadow: none;
+    top: 65px;
+    display: block;
+    left: 85px;
+    padding: 1px;
+    position: absolute;
+    height: 75px;
+    width: 78px;
+    /* background: rgba(0, 0, 0, 0.3) none repeat scroll 0 0; */
+    z-index: 9;
+}
+
+.profile-img img {
+  background-color: #fff;
+  border-radius: 50%;
+  box-shadow: 0 1px 1px rgb(0 0 0 / 7%);
+  height: 95px;
+  padding: 5px;
+  width: 95px;
+}
+
+.collection-profile-name {
+  bottom: 210px;
+  left: 32px;
+  position: absolute;
+}
+
+.collection-profile-name h2 {
+  color: #010000;
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 30px;
+  left: 81px;
+  top: 5px;
+  max-width: 275px;
+  position: relative;
+}
+
+.collection-profile-details-group {
+  position: relative;
+  top: -59px;
+}
+
+.collection-asset-value {
+  font-family: 'poppins';
+  font-size: 14px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 3.17;
+  letter-spacing: normal;
+  margin-top: -43%;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.collection-asset-key span {
+  font-family: 'poppins';
+  font-size: 14.4px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2.59;
+  letter-spacing: normal;
+  text-align: left;
+  color: #bb1d19;
+}
+
+.collection-profile-slogan-container h2 {
+  font-size: 16px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.43;
+  letter-spacing: normal;
+  text-align: left;
+  color: #333;
+}
+
+.collection-profile-slogan-container {
+  position: relative;
+  top: -50px;
+  left: 81px;
+}
+
+.CollectionSocialIcon_Container {
+  width: 532px;
+  padding: 20px;
+}
+
+.social-img{
+  margin-top: 1%;
+  width: 20px;
+  height: 20px;
+}
   }

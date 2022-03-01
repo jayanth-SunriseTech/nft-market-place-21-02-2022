@@ -1,14 +1,17 @@
 import React from 'react'
-import FilterNav from '../components/FilterNav/FilterNav'
-import Filters from '../components/FilterNav/Filters'
-import NFTCard from '../components/NFTCard/NFTCard'
-import NFTCardData from '../components/SampleData/TopTrendingList'
-import OurCollections from '../components/OurCollections/OurCollections'
+import FilterNav from '../FilterNav/FilterNav'
+
+import NFTCard from '../NFTCard/NFTCard'
+import NFTCardData from '../SampleData/TopTrendingList'
+
 import SearchIcon from '@mui/icons-material/Search';
+import CopyRightFooter from '../CopyRightFooter/CopyRightFooter';
+import './MarketPlaceMain.css'
 
 function MarketPlaceMain({ showFilter , setShowFilter }) {
   return (
-    <div className='container-fluid'>
+    <>
+    <div className='container-fluid CollectionMainPage'>
         <div className='row marketPlaceFilterRow' >
         <div className='searchBarMobile'>
                 <div className="filtersearchbar_container">
@@ -35,7 +38,14 @@ function MarketPlaceMain({ showFilter , setShowFilter }) {
         
         
             </div>
+           
+            
+            
         </div>
+         
+         <CopyRightFooter/>
+        
+        </>
      
   )
 }

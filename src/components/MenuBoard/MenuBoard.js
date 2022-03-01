@@ -10,9 +10,11 @@ import LockIcon from '@mui/icons-material/Lock';
 import SellIcon from '@mui/icons-material/Sell';
 import VisibilityIcon from '@mui/icons-material/Visibility';
 import StarBorderIcon from '@mui/icons-material/StarBorder';
+import dropDownIcon from '../../Assets/Icon-arrow-dropdown.png'
 import './MenuBoard.css'
 import MenuBoardDropDown from "./MenuBoardDropDown";
 import ColoredLine from "../ColoredLine/ColoredLine";
+import Accordion from "./Accordion";
 
 function MenuBoard() {
   return (
@@ -36,7 +38,7 @@ function MenuBoard() {
           <div className="container-fluid">
             <div className="row">
               <div className="col-lg-1 "></div>
-              <div className="col-lg-4 col-12">
+              <div className="col-lg-4 col-12 pcNFTContainer" >
                 <div className="menuNFTConainer">
                   <img  src={NFT} />
                 </div>
@@ -91,7 +93,8 @@ function MenuBoard() {
         <div className="row row3">
           <div className="col-lg-1"></div>
           <div className="col-lg-4 menuBoardFilterContainer">
-            <MenuBoardDropDown/>
+            {/* <MenuBoardDropDown/> */}
+            <Accordion/>
           </div>
           <div className="col-lg-5 col-12">
             <div className="price_history_container">
@@ -104,7 +107,8 @@ function MenuBoard() {
                             </div>
                             <div className="col-8 col-lg-10 menuText"><span className="card_title">Price History</span></div>
                             <div className="col-2 col-lg-1 menuDownIcon">
-                            <KeyboardArrowDownIcon/>
+                            {/* <KeyboardArrowDownIcon/> */}
+                            <img src={dropDownIcon} />
                             </div>
                             </div>
                           </div>
@@ -123,7 +127,8 @@ function MenuBoard() {
                             </div>
                             <div className="col-8 col-lg-10 menuText"><span className="card_title">Listings</span></div>
                             <div className="col-2 col-lg-1 menuDownIcon">
-                            <KeyboardArrowDownIcon/>
+                            {/* <KeyboardArrowDownIcon/> */}
+                            <img src={dropDownIcon} />
                             </div>
                             </div>
                           </div>
@@ -137,7 +142,7 @@ function MenuBoard() {
         </div>
         <div className="row">
           <div className="col-lg-1"></div>
-          <div className="col-lg-10">
+          <div className="col-lg-9">
           {/* <div className="priceBox"></div> */}
           <div class="card mb-2 mt-3 menuBoard_card">
                           <div class="card-header bg-light">
@@ -147,7 +152,8 @@ function MenuBoard() {
                             </div>
                             <div className="col-8 col-lg-10 menuText"> <span className="card_title">Recent Activity</span></div>
                             <div className="col-2 col-lg-1 menuDownIcon">
-                            <KeyboardArrowDownIcon/>
+                            {/* <KeyboardArrowDownIcon/> */}
+                            <img src={dropDownIcon} />
                             </div>
                             </div>
                           </div>
@@ -156,7 +162,7 @@ function MenuBoard() {
                           </div>
                         </div>
           </div>
-          <div className="col-lg-1"></div>
+          <div className="col-lg-2"></div>
         
         </div>
       </div>

@@ -1,5 +1,5 @@
 import React from 'react';
-import './ColoredLine.css';
+
 
 function ColoredLine({ color,marginTop }) {
   return (

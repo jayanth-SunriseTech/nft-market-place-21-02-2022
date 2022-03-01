@@ -1,0 +1,56 @@
+
+
+.form-text{
+    text-align: left;
+}
+
+
+.NFTDetailsList p {
+   color:  #6c757d!important;
+   font-size: 11px !important;
+   text-align: left;
+}
+li{
+    list-style: none;
+}
+
+.createNFT_Heading{
+    font-family: 'Poppins';
+    font-size: 51px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.36; 
+    letter-spacing: normal;
+    text-align: left;
+    color: #333;
+}
+
+.NFTDetailsList h4{
+text-align: left;
+font-family: 'Poppins';
+  font-size: 20px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.83;
+  letter-spacing: normal;
+  color: #333;
+}
+
+ .mintNFT_btn{
+    border: 1px solid #b22222;
+    background-color: #fff;
+    outline: none;
+    width: 180px;
+    height: 40px;
+    border-radius: 20px;
+    color: #b22222;
+    box-shadow: 0px 20px 18px -14px rgba(0,0,0,1);
+}
+
+ .mintNFT_btn:hover{
+    background-color: #b22222;
+    color: white;
+    
+}

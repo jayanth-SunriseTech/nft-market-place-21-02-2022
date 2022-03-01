@@ -1,6 +1,6 @@
 import React from "react";
 import './UserProfileCard.css'
-import banner from '../../Assets/banner.png'
+import nft from '../../Assets/nft.png'
 import fb from '../../Assets/user-profile-fb.png'
 import email from '../../Assets/user-profile-email.png'
 import twitter from '../../Assets/user-profile-twitter.png'
@@ -9,7 +9,7 @@ import profilePic from '../../Assets/rectangle-11.png'
 
 function UserProfileCard() {
   return (
-    <div class="container CollectionProfile_card">
+    <div class="container UserProfile_card">
       <div class="row">
         <div class="col-md-12 col-sm-12">
           <div class="profile-block">
@@ -23,7 +23,7 @@ function UserProfileCard() {
             <div class="profile-img">
               <a href="#">
                 <img
-                  src={profilePic}
+                  src={nft}
                   alt=""
                   title=""
                 />
@@ -31,20 +31,20 @@ function UserProfileCard() {
             </div>
             <div className="profile-Contact">
               <div className="row CollectionSocialIcon_Container">
-                <div className="col-lg-10"></div>
-                <div className="col-lg-2 ">
+                <div className="col-lg-9"></div>
+                <div className="col-lg-3 ">
                   <div className="row">
                     <div className="col-lg-3">
-                      <img  src={fb} alt='social-fb'/>
+                      <img  src={fb} alt='social-fb' className="social-img" />
                     </div>
                     <div className="col-lg-3">
-                      <img src={twitter} alt='social-fb'/>
+                      <img src={twitter} alt='social-fb' className="social-img"/>
                     </div>
                     <div className="col-lg-3">
-                      <img src={youtube} alt='social-fb'/>
+                      <img src={youtube} alt='social-fb' className="social-img"/>
                     </div>
                     <div className="col-lg-3">
-                      <img src={email} alt='social-fb'/>
+                      <img src={email} alt='social-fb' className="social-img"/>
                     </div>
                    
                   </div>
@@ -59,7 +59,7 @@ function UserProfileCard() {
                 <div className="col-lg-1"></div>
                 <div className="col-lg-10">
                   <div className="row">
-                    <div className="col-lg-6 ">
+                    <div className="col-lg-6  ">
                       <div className="profile-details-columns">
                         <div className="asset-key user">
                           <span>Items</span>
@@ -72,7 +72,7 @@ function UserProfileCard() {
                         </div>
                       </div>
                     </div>
-                    <div className="col-lg-6">
+                    <div className="col-lg-6 ">
                       <div className="profile-details-columns">
                         <div className="asset-key user">
                           <span>Floor</span>

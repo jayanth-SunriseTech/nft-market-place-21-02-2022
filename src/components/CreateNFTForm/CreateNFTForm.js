@@ -2,7 +2,12 @@ import React from 'react';
 import './CreateNFTForm.css'
 import LogoutIcon from '@mui/icons-material/Logout';
 import AddIcon from '@mui/icons-material/Add';
-
+import './CreateNFTForm.css'
+// import { FilePond, registerPlugin } from "react-filepond";
+// import "filepond/dist/filepond.min.css";
+// import FilePondPluginImageExifOrientation from "filepond-plugin-image-exif-orientation";
+// import FilePondPluginImagePreview from "filepond-plugin-image-preview";
+// import "filepond-plugin-image-preview/dist/filepond-plugin-image-preview.css";
 
 function CreateNFTForm() {
 
@@ -12,15 +17,24 @@ function CreateNFTForm() {
             <div className="row">
                 <div className="col-lg-2">
                     <LogoutIcon/>
-                </div>
+                </div> 
                 <div className="col-lg-10"></div>
             </div>
             <div className="row">
                 <div className="col-lg-3"></div>
                 <div className="col-lg-6">
+                  <div className='row'>
+                    <div className='col-lg-3'></div>
+                    <div className='col-lg-6'>
+                      <span className='createNFT_Heading'>Create NFTs</span>
+                    </div>
+                    <div className='col-lg-3'></div>
+                  </div>
                 <form>
                 <div class="form-group">
-                <label for="exampleInputEmail1">Name</label>
+                <div className="col-lg-12 input_label">
+                <span >Name</span>
+            </div>
                 <input
                                 type="text"
                                 class="form-control"
@@ -31,7 +45,10 @@ function CreateNFTForm() {
                               />
                               </div>
                               <div class="form-group">
-                              <label for="exampleInputEmail1">Description</label>
+                              <div className="col-lg-12 input_label">
+                <span >Description</span>
+            </div>
+                              
                               <small
                                 id="emailHelp"
                                 class="form-text text-muted"
@@ -41,9 +58,9 @@ function CreateNFTForm() {
                                <textarea aria-describedby="emailHelp" class="form-control" aria-label="With textarea"></textarea>
                 </div>
                 <div class="form-group">
-                            <label for="exampleFormControlSelect1">
-                             Collection
-                            </label>
+                <div className="col-lg-12 input_label">
+                <span >Collection</span>
+            </div>
                             <small
                               id="exampleFormControlSelect1"
                               class="form-text text-muted"
@@ -51,7 +68,7 @@ function CreateNFTForm() {
                               This is the collection where your item will appear.
                             </small>
                             <select
-                              class="form-control"
+                              class="form-select"
                               id="exampleFormControlSelect1"
                             >
                               <option value="" selected disabled>Select Collection</option>
@@ -64,16 +81,16 @@ function CreateNFTForm() {
                             
                           </div>
                           <div className='form-group'>
-                              <div className='row'>
+                              <div className='row '>
                                   <div className="col-lg-1"></div>
                                   <div className="col-lg-10">
                                       <ul>
                                           <li>
                                               <span>
-                                                  <div className="row">
-                                                  <div className="col-lg-10">
+                                                  <div className="row ">
+                                                  <div className="col-lg-10 NFTDetailsList ">
                                                       <h4>Properties</h4>
-                                                      <span>Textual traits that show up as rectangles</span>
+                                                      <p>Textual traits that show up as rectangles</p>
                                                   </div>
                                                   <div className="col-lg-2">
                                                   <AddIcon/>
@@ -84,9 +101,9 @@ function CreateNFTForm() {
                                           <li>
                                               <span>
                                                   <div className="row">
-                                                  <div className="col-lg-10">
+                                                  <div className="col-lg-10 NFTDetailsList">
                                                       <h4>Levels</h4>
-                                                      <span>Numerical traits that show up as progreebar</span>
+                                                      <p>Numerical traits that show up as progreebar</p>
                                                   </div>
                                                   <div className="col-lg-2">
                                                   <AddIcon/>
@@ -97,9 +114,9 @@ function CreateNFTForm() {
                                           <li>
                                               <span>
                                                   <div className="row">
-                                                  <div className="col-lg-10">
+                                                  <div className="col-lg-10 NFTDetailsList">
                                                       <h4>Stats</h4>
-                                                      <span>Numerical traits that show up as numbers</span>
+                                                      <p>Numerical traits that show up as numbers</p>
                                                   </div>
                                                   <div className="col-lg-2">
                                                   <AddIcon/>
@@ -110,9 +127,9 @@ function CreateNFTForm() {
                                           <li>
                                               <span>
                                                   <div className="row">
-                                                  <div className="col-lg-10">
+                                                  <div className="col-lg-10 NFTDetailsList">
                                                       <h4>Unlockable Contents</h4>
-                                                      <span>Includes unlockable content that can only be revealed by the owner of ther item.</span>
+                                                      <p>Includes unlockable content that can only be revealed by the owner of ther item.</p>
                                                   </div>
                                                   <div className="col-lg-2">
                                                   <div class="form-check form-switch">
@@ -130,9 +147,9 @@ function CreateNFTForm() {
                                           <li>
                                               <span>
                                                   <div className="row">
-                                                  <div className="col-lg-10">
+                                                  <div className="col-lg-10 NFTDetailsList">
                                                       <h4>Mystery Prize</h4>
-                                                      <span>Includes mystery prizes, etc tokens,NFTs.</span>
+                                                      <p>Includes mystery prizes, etc tokens,NFTs.</p>
                                                   </div>
                                                   <div className="col-lg-2">
                                                   <div class="form-check form-switch">
@@ -151,9 +168,9 @@ function CreateNFTForm() {
                                           <li>
                                               <span>
                                                   <div className="row">
-                                                  <div className="col-lg-10">
+                                                  <div className="col-lg-10 NFTDetailsList">
                                                       <h4>Explicit and Sensitive Content</h4>
-                                                      <span>See tis item as explicit and sensitive content</span>
+                                                      <p>See tis item as explicit and sensitive content</p>
                                                   </div>
                                                   <div className="col-lg-2">
                                                   <div class="form-check form-switch">
@@ -174,7 +191,9 @@ function CreateNFTForm() {
                               </div>
                           </div>
                           <div class="form-group">
-                <label for="exampleInputEmail1">Supply</label>
+                          <div className="col-lg-12 input_label">
+                <span >Supply</span>
+            </div>
                 <small
                               id="exampleInputEmail1"
                               class="form-text text-muted"
@@ -191,10 +210,9 @@ function CreateNFTForm() {
                               />
                               </div>
                               <div class="form-group">
-                            <label for="exampleFormControlSelect1">
-                             Blockchain
-                            </label>
-                            
+                              <div className="col-lg-12 input_label">
+                <span >Blockchain</span>
+            </div>                    
                             <select
                               class="form-control"
                               id="exampleFormControlSelect1"
@@ -209,7 +227,7 @@ function CreateNFTForm() {
                          Drag and Drop
                           </div>
                 </form>
-                <button>Create</button>
+                <button className='mintNFT_btn'>Create</button>
                 </div>
                 <div className="col-lg-3"></div>
             </div>

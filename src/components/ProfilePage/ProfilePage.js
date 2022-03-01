@@ -3,14 +3,17 @@ import FilterNav from '../FilterNav/FilterNav'
 import NFTCard from '../NFTCard/NFTCard'
 import UserProfileCard from '../UserProfileCard/UserProfileCard';
 import NFTCardData from '../SampleData/TopTrendingList';
+import CopyRightFooter from '../CopyRightFooter/CopyRightFooter';
+import './ProfilePage.css'
 
 function ProfilePage({ showFilter , setShowFilter }) {
   return (
+    <>
     <div className='container-fluid ProfilePage_page'>
         <div className='row'>
         <div className='col-1'></div>
             <div className='col-10 collction_profile_card_container'>
-            <UserProfileCard/>
+            <UserProfileCard/> 
             </div>
             <div className='col-1'></div>
         </div>
@@ -31,6 +34,8 @@ function ProfilePage({ showFilter , setShowFilter }) {
         
             </div>
     </div>
+    <CopyRightFooter/>
+    </>
   )
 }
 

@@ -25,13 +25,14 @@ import Filters from "./components/FilterNav/Filters";
 import UiContext from './components/UIContext/UIContext'
 import { useContext } from "react";
 import MenuBoard from "./components/MenuBoard/MenuBoard";
-import MarketPlaceMain from "./MarketPlaceMain/MarketPlaceMain";
+import MarketPlaceMain from "./components/MarketPlaceMain/MarketPlaceMain";
 import ListItem from "./components/ListItem/ListItem";
 import Auction from "./components/Auction/Auction";
 import FixedPrice from "./components/FixedPrice/FixedPrice";
 import CollectionProfile from "./components/CollectionProfileCard/CollectionProfileCard";
 import CollectionProfilePage from "./components/CollectionProfileCard/CollectionProfilePage/CollectionProfilePage";
 import ProfilePage from "./components/ProfilePage/ProfilePage";
+import CreateNFTForm from "./components/CreateNFTForm/CreateNFTForm";
 
 const App = () => {
 
@@ -65,6 +66,7 @@ const setShowFilter = uiContext.setShowFilter
                <Route exact path="/fixed-price" element={<FixedPrice showFilter={showFilter}  setShowFilter={setShowFilter}/>}/>
                <Route exact path="/collection-profile" element={<CollectionProfilePage showFilter={showFilter}  setShowFilter={setShowFilter}/>}/>
                <Route exact path="/user-profile" element={<ProfilePage showFilter={showFilter}  setShowFilter={setShowFilter}/>}/>
+               <Route exact path="/mint" element={<CreateNFTForm showFilter={showFilter}  setShowFilter={setShowFilter}/>}/>
                </Routes>
               
                </BrowserRouter>

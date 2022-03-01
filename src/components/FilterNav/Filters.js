@@ -13,6 +13,7 @@ function Filters({ showFilter , setShowFilter }) {
     const[secondDropDown,setSecondDropDown] = useState(false);
     const[thirdDropDown,setThirdDropDown] = useState(false);
     const[fourthDropDown,setFourthDropDown] = useState(false);
+    
 
     const handleFirst = () => {
         setFirstDropDown(!firstDropDown)
@@ -26,6 +27,7 @@ function Filters({ showFilter , setShowFilter }) {
     const handleFourth = () => {
         setFourthDropDown(!fourthDropDown)
     }
+   
 
     const handleShowFilter = () => {
         setShowFilter(!showFilter)
@@ -48,7 +50,7 @@ function Filters({ showFilter , setShowFilter }) {
       <div onClick={handleFirst} className={firstDropDown ? "row dropdownRow statusdropDown_active":"row dropdownRow statusdropDown"}>
           <div className="col-2 icon">
           <AnalyticsIcon/>
-          </div>
+          </div> 
           <div className="col-8 text">
               Status
           </div>
@@ -75,9 +77,19 @@ function Filters({ showFilter , setShowFilter }) {
               <input type='text' className="CurrencyInput" placeholder="United States Dollar (USD)" />
               </div>
               <div className="row minRow">
-              <input type='text' className="sortInput" placeholder="Min" />
-              <span>To</span>
-              <input type='text' className="sortInput" placeholder="Max" />
+                  <div className="col-lg-1 col-md-1 col-1"></div>
+                  <div className="col-lg-4 col-md-4 col-4">
+                  <input type='text' className="sortInput" placeholder="Min" />
+                  </div>
+                  <div className="col-lg-2 col-md-2 col-2">
+                  <span>To</span>
+                  </div>
+                  <div className="col-lg-4 col-md-4 col-4">
+                  <input type='text' className="sortInput" placeholder="Max" />
+                  </div>
+                  <div className="col-lg-1 col-md-1 col-1"></div>
+              
+              
               </div>
               <button className="filterapply_btn">Apply</button>
           </div>
@@ -98,7 +110,7 @@ function Filters({ showFilter , setShowFilter }) {
              <input type='radio' id="Video" value='Video' name="file"/>
              <label for='Video'>Video</label> 
              <input type='radio' id="Audio" value='Audio' name="file"/>
-             <label for='Audio'>Aduio</label> 
+             <label for='Audio'>Audio</label> 
              
           </div>
       </div>
@@ -113,8 +125,8 @@ function Filters({ showFilter , setShowFilter }) {
           <KeyboardArrowDownIcon/>
           </div>
           <div className={fourthDropDown ? "dropDown_content StatusdropDown_content_active":"StatusdropDown_content"} >
-              <button className="status_btn">Fixed Price</button>
-              <button className="status_btn">Auction</button>
+              <button className="status_btn">Yes</button>
+              <button className="status_btn">No</button>
           </div>
       </div>
       </div>

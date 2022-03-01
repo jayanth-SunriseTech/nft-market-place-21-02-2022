@@ -6,15 +6,20 @@
 }
 
 .menuNFTConainer {
-    height: 464px;
-    width: 350px;
+    height: 521px;
+    width: 427px;
     border: solid 1px #f1c1c1;
     border-radius: 19px;
-    padding: 10px;
+    padding: 10px; 
 }
 .menuNFTConainer img{
-    height: 440px;
-    width: 324px;
+    height: 491px;
+    width: 387px;
+}
+
+.pcNFTContainer{
+    display: flex;
+    align-items: center;
 }
 
 
@@ -27,12 +32,15 @@
 
 .edit_btn ,.list_btn{
     border: 1px solid #b22222;
-    background-color: #fff;
+    background-color: #b22222;
+    color: white;
+   
+    
     outline: none;
     width: 103px;
-    height: 54px;
+    height: 40px;
     border-radius: 20px;
-    color: #b22222;
+    
     box-shadow: 0px 20px 18px -14px rgba(0,0,0,1);
 }
 
@@ -45,18 +53,23 @@
 }
 
 .menu_btn_grp button:hover{
-    background-color: #b22222;
-    color: white;
+    background-color: #fff;
+    color: #b22222;
 }
 
 .btn_grp button:hover{
-    background-color: #b22222;
-    color: white;
+    background-color: #fff;
+    color: #b22222;
+
+  
     
 }
 
 .row1{
     margin-top: 3%;
+}
+.row3{
+    margin-top: 5%;
 }
 
 .nftTitleHeadingContainer{
@@ -120,6 +133,11 @@
     padding: 0 0 0 2%;
 }
 
+.menuDownIcon img{
+    width: 20px !important;
+    height: 20px !important;
+}
+
  .saleContainer{
     
      height: 209px;
@@ -140,19 +158,22 @@
 
 .placeBid_btn button{
     border: 1px solid #b22222;
-    background-color: #fff;
+    background-color: #b22222;
+    color: white;
+   
     outline: none;
     width: 200px;
     height: 50px;
     border-radius: 20px;
-    color: #b22222;
+   
     box-shadow: 0px 20px 18px -14px rgba(0,0,0,1);
     
 }
 
 .placeBid_btn button:hover{
-    background-color: #b22222;
-    color: white;
+ 
+    background-color: #fff;
+    color: #b22222;
 }
 
 .makeOffer_btn{
@@ -253,11 +274,13 @@
     width: 60px;
     height: 30px;
     border: 1px solid #b22222;
-    background-color: #fff;
+
     outline: none;
     border-radius: 20px;
-    color: #b22222;
+ 
     box-shadow: 0px 20px 18px -14px rgb(0 0 0);
+    background-color: #b22222;
+    color: white;
 }
 .menuNFTConainer img {
     height: 400px;
@@ -268,7 +291,7 @@
 }
 
 .row3{
-    margin-top: 140%;
+    margin-top: 10%;
 }
 
 .menuNFTConainer {
@@ -332,12 +355,14 @@
 
 .placeBid_btn button {
     border: 1px solid #b22222;
-    background-color: #fff;
+
+    background-color: #b22222;
+    color: white;
     outline: none;
     width: 150px;
     height: 35px;
     border-radius: 20px;
-    color: #b22222;
+
     box-shadow: 0px 20px 18px -14px rgb(0 0 0);
 }
 

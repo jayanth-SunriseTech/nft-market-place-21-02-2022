@@ -6,6 +6,7 @@ import profileImg from '../../Assets/profile.png'
 import walletImage from '../../Assets/wallet.png'
 import brandLogo from '../../Assets/logo.png'
 import './Navbar.css'
+import { Link, NavLink } from "react-router-dom";
 
 
 const Navbar = () => {
@@ -43,7 +44,7 @@ const Navbar = () => {
                         }
                         <div className="searchbar_container">
                             <div className="search">
-                        <input className="searchbar" place holder="Search" type="text" name="txtBox" />
+                        <input className="searchbar" placeholder="Search" type="text" name="txtBox" />
                         <button className="search_btn">
                         <SearchIcon color="action" class="search_icon"></SearchIcon>
                         </button>
@@ -67,7 +68,9 @@ const Navbar = () => {
       </ul>
       <div className="account_icons_container">
       <div className="navbar navbar-collapse d-none d-md-block">
+          <NavLink activeClassName='active' to='/user-profile'>
       <img src={profileImg} class="user_icon"/>
+      </NavLink>
       <img src={walletImage} class="wallet_icon"/>
                     <div className="nav navbar-nav ms-auto ml-auto">
                         { !wallet.connected &&  
