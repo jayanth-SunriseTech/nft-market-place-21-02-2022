@@ -11,7 +11,7 @@ function UserProfileCard() {
   return (
     <div class="container UserProfile_card">
       <div class="row">
-        <div class="col-md-12 col-sm-12">
+        <div class="col-md-12 col-sm-12 col-sm-12">
           <div class="profile-block">
             <div class="profile-block-thumb cover-container">
               {/* <img

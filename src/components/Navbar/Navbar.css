@@ -18,6 +18,9 @@
     #111310
   );
 }
+.brand_logo_img{
+  cursor: pointer;
+}
 
 .brand_logo_img:hover{
   box-shadow: 0px 11px 36px -11px rgba(250,245,250,1);
@@ -89,7 +92,7 @@ width: 100%;
 
 .container-fluid > ul >li > a{
     
-    color: white !important;
+    color: white !important; 
 }
 
 .container-fluid > ul >li > a:hover{
@@ -98,6 +101,11 @@ width: 100%;
 
 .nav_list_container{
   margin-left: 2%; 
+}
+
+
+.nav_list_container > li {
+ border: none;
 }
 
 .user_icon{
@@ -129,6 +137,12 @@ width: 100%;
 .connect_btn_pc:hover{
   color: #fff;
   background-color: #b22222;
+}
+
+
+.active{
+
+  color: #b22222;
 }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {

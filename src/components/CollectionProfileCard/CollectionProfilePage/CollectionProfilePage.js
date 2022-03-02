@@ -30,7 +30,7 @@ function CollectionProfilePage({ showFilter , setShowFilter }) {
           </div>
             </div>
             <div className='col-1'></div>
-        
+         
         
             </div>
     </div>

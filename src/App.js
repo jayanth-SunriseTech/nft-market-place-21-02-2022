@@ -33,6 +33,11 @@ import CollectionProfile from "./components/CollectionProfileCard/CollectionProf
 import CollectionProfilePage from "./components/CollectionProfileCard/CollectionProfilePage/CollectionProfilePage";
 import ProfilePage from "./components/ProfilePage/ProfilePage";
 import CreateNFTForm from "./components/CreateNFTForm/CreateNFTForm";
+import CreateCollection from "./components/CreateCollection/CreateCollection";
+import EditUser from "./components/EditUser/EditUser";
+import ArtistDashboard from "./components/ArtistDashboard/ArtistDashboard";
+import MarketPlaceCollection from "./components/MarketPlaceCollection/MarketPlaceCollection";
+import UserCollectionPage from "./components/UserCollectionPage/UserCollectionPage";
 
 const App = () => {
 
@@ -67,6 +72,11 @@ const setShowFilter = uiContext.setShowFilter
                <Route exact path="/collection-profile" element={<CollectionProfilePage showFilter={showFilter}  setShowFilter={setShowFilter}/>}/>
                <Route exact path="/user-profile" element={<ProfilePage showFilter={showFilter}  setShowFilter={setShowFilter}/>}/>
                <Route exact path="/mint" element={<CreateNFTForm showFilter={showFilter}  setShowFilter={setShowFilter}/>}/>
+               <Route exact path="/create-collection" element={<CreateCollection showFilter={showFilter}  setShowFilter={setShowFilter}/>}/>
+               <Route exact path="/edit" element={<EditUser showFilter={showFilter}  setShowFilter={setShowFilter}/>}/>
+               <Route exact path="/dashboard" element={<ArtistDashboard showFilter={showFilter}  setShowFilter={setShowFilter}/>}/>
+               <Route exact path="/collections" element={<MarketPlaceCollection showFilter={showFilter}  setShowFilter={setShowFilter}/>}/>
+               <Route exact path="/user-collections" element={<UserCollectionPage showFilter={showFilter}  setShowFilter={setShowFilter}/>}/>
                </Routes>
               
                </BrowserRouter>
