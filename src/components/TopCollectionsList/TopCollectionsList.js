@@ -12,7 +12,7 @@ function TopCollectionsList() {
           </div>
           <div className="row"  >
               <div className='col-1'></div>
-              <div className='col-10'>
+              <div className='col-10 topCollectionsListContainer'>
                   <div className='row'>
                     <div className='col-md-4 col-lg-4 col-12' style={{marginRgiht:'10%'}}>
                     {TopCollectionsListData.slice(0,5).map((e,index)=>

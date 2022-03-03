@@ -22,6 +22,17 @@
   color: #09d3ac;
 }
 
+.navLink{
+  text-decoration: none !important;
+  color: inherit !important;
+  border: none !important;
+
+}
+
+.active{
+color: #b22222 !important;
+text-decoration: none !important;
+}
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
   

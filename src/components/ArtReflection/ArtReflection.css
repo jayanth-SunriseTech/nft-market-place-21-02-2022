@@ -3,6 +3,7 @@
     background-image: linear-gradient(to bottom, #ceaaaa, #d6b9b9, #FFFFFF, #FFFFFF, #FFFFFF);
 }
 .card-img-top{
+    margin-left: -5%;
     width: 288px;
     height: 400px;
     transition: all 0.2s ease-in;
@@ -272,6 +273,7 @@
       }
 
       .card-img-top{
+          margin-left: 0 !important;
         width: 144px;
         height: 229px;
         transition: all 0.2s ease-in;

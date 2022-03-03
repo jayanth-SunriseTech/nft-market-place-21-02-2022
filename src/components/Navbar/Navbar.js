@@ -30,13 +30,13 @@ const Navbar = () => {
         dispatch(connectFailed(errorDiv()));
     }
     return (
-        <nav className='navbar navbar-expand-lg navbar-light bg-light'>
+        <nav className='navbar navbar-expand-lg navbar-light bg-light' role="navigation">
             <div className=" container-fluid navbar_mobile" style={{margin:0}}>
               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
-  <NavLink to='/'>
-                <img src={brandLogo} className='brand_logo_img'/></NavLink>
+  <Link className="nav-link"  to='/'>
+                <img src={brandLogo} className='brand_logo_img'/></Link>
                 { !wallet.connected &&  
                                 <button className='navbar-toggler mr-auto ml-auto connect_btn_mobile' onClick={connect}>Connect Wallet</button> 
                             }
@@ -53,23 +53,29 @@ const Navbar = () => {
                         </div>
                         
                         <ul class=" collapse navbar-collapse navbar-nav me-auto mb-2 mb-lg-0 nav_list_container" id="navbarTogglerDemo01">
+                        
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Explore</a>
+        <NavLink activeClassName="active" className="nav-link"   to='/collections'>
+         Explore
+        </NavLink>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Create</a>
-        </li>
-        
-        <li class="nav-item">
-          <a class="nav-link " href="#">Stats</a>
+        <NavLink activeClassName="active" className="nav-link"    to='/mint'>
+          Create
+        </NavLink>
         </li>
         <li class="nav-item">
-          <a class="nav-link " href="#">Resources</a>
+        <NavLink activeClassName="active" className="nav-link"    to='/stats'> 
+          Stats
+        </NavLink>
+        </li>
+        <li class="nav-item">
+        <NavLink activeClassName="active" className="nav-link"    to='/resources'> Resources</NavLink>
         </li>
       </ul>
       <div className="account_icons_container">
       <div className="navbar navbar-collapse d-none d-md-block">
-          <NavLink exact activeClassName="active" to='/user-profile'>
+          <NavLink className="nav-link"    to='/user-profile'>
       <img src={profileImg} class="user_icon"/>
       </NavLink>
       <img src={walletImage} class="wallet_icon"/>

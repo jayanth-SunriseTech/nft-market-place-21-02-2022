@@ -10,6 +10,7 @@
     width: 300px;
     background: rgba(232, 232, 232, 0.3); 
    transition: all 0.5s ease;
+   margin-top: 10%;
 }
 
 .sellCard:hover{

@@ -38,6 +38,8 @@ import EditUser from "./components/EditUser/EditUser";
 import ArtistDashboard from "./components/ArtistDashboard/ArtistDashboard";
 import MarketPlaceCollection from "./components/MarketPlaceCollection/MarketPlaceCollection";
 import UserCollectionPage from "./components/UserCollectionPage/UserCollectionPage";
+import ResourcePage from "./components/ResourcePage/ResourcePage";
+
 
 const App = () => {
 
@@ -62,6 +64,7 @@ const setShowFilter = uiContext.setShowFilter
            
                < Navbar />
                <Routes>
+               <Route  element={<Home/>}/>
                <Route exact path="/" element={<Home/>}/>
                <Route exact path="/filter" element={<FilterNav showFilter={showFilter}  setShowFilter={setShowFilter} />}/>
                <Route exact path="/menuboard" element={<MenuBoard/>}/>
@@ -77,6 +80,8 @@ const setShowFilter = uiContext.setShowFilter
                <Route exact path="/dashboard" element={<ArtistDashboard showFilter={showFilter}  setShowFilter={setShowFilter}/>}/>
                <Route exact path="/collections" element={<MarketPlaceCollection showFilter={showFilter}  setShowFilter={setShowFilter}/>}/>
                <Route exact path="/user-collections" element={<UserCollectionPage showFilter={showFilter}  setShowFilter={setShowFilter}/>}/>
+               <Route exact path="/stats" element={<Stats showFilter={showFilter}  setShowFilter={setShowFilter}/>}/>
+               <Route exact path="/resources" element={<ResourcePage showFilter={showFilter}  setShowFilter={setShowFilter}/>}/>
                </Routes>
               
                </BrowserRouter>

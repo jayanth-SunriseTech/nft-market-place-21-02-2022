@@ -92,7 +92,7 @@ width: 100%;
 
 .container-fluid > ul >li > a{
     
-    color: white !important; 
+    color: white ; 
 }
 
 .container-fluid > ul >li > a:hover{
@@ -106,6 +106,7 @@ width: 100%;
 
 .nav_list_container > li {
  border: none;
+ margin-left: 2%;
 }
 
 .user_icon{
@@ -145,6 +146,12 @@ width: 100%;
   color: #b22222;
 }
 
+a{
+  text-decoration: none !important;
+  color: white !important;
+  border: none !important;
+}
+
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
   .searchbar_container{
     display: none;
@@ -156,10 +163,10 @@ width: 100%;
     outline: none;
     font-size: 12px;
     padding: 10px 20px 10px 20px;
-    /* margin: 0 !important; */
-    margin-left: 30% !important;
-    margin-top: 3% !important;
-    width: 145px !important;
+    margin-top: 5% !important; 
+    position: absolute;
+    left: 59%;
+    top: 35%;
 }
 
   .navbar-light .navbar-toggler {
@@ -171,7 +178,9 @@ width: 100%;
     border-color: rgba(0,0,0,.1);
 }
   .brand_logo_img{
-    margin-top: -12%;
+    margin-top: -50%;
+    margin-left: -25%;
+   
   }
 
   .navbar_mobile{
