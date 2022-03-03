@@ -4,7 +4,7 @@ import './CopyRightFooter.css'
 function CopyRightFooter() {
   return (
     <div className='footer '>
-Copyright © 2021 . All rights Reserved. 
+Copyright © 2022 . All rights Reserved. 
     </div>
   )
 }
