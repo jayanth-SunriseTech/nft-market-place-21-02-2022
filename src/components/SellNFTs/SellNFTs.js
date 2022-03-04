@@ -2,6 +2,7 @@ import React from 'react'
 import SellNFTCard from './SellNFTCard';
 import './SellNFTs.css';
 import setupData from '../SampleData/SetupWallet';
+import { Link } from 'react-router-dom';
 
 function SellNFTs() {
   return (
@@ -23,7 +24,9 @@ function SellNFTs() {
             <div className='col-1'></div>
       </div>
       <div className="row btn_row" >
+        <Link to='/mint'>
           <button className="section-bottom-button">Create</button>
+          </Link>
       </div>
     </div>
   </div>

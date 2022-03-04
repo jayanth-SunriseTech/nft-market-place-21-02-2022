@@ -11,8 +11,8 @@ import './MenuBoardDropDown.css'
 function Accordion() {
   return (
     <div>
-        <div class="accordion accordion-flush" id="accordionFlushExample">
-  <div class="accordion-item">
+        <div class="accordion accordion-flush MenuboardAccordion" id="accordionFlushExample">
+  <div class="accordion-item MenuboardAccordion-item">
     <h2 class="accordion-header" id="flush-headingOne">
       <button class="accordion-button collapsed first" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
         <div className='row'>
@@ -27,7 +27,7 @@ function Accordion() {
       </button> 
     </h2>
     <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-      <div class="accordion-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      <div class="accordion-body MenuboardAccordion_body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
 veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
 commodo consequat. Duis aute irure dolor in reprehenderit in voluptate

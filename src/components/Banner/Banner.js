@@ -2,6 +2,7 @@ import React from "react";
 import nft from '../../Assets/nft.png'
 import banner from '../../Assets/banner.png'
 import './Banner.css'
+import { Link } from "react-router-dom";
 
 
 function Banner() {
@@ -14,8 +15,13 @@ function Banner() {
             <span className="left_title_1">Discover, Collect &#x26; Sell Extraordinary Cultural NFTS</span>
             <span className="left_title_2">Connecting Indigenous with Blockchain</span>
             <div className="btn_grp">
+              <Link to='/collections'>
+              
             <button className="explore_btn">Explore</button>
+            </Link>
+            <Link to='/mint'>
             <button className="create_btn">Create</button>
+            </Link>
             </div>
           </div>
           <div className="col-md-5 col-lg-5 col-sm-12"> 

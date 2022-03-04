@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import NFTCard from '../NFTCard/NFTCard';
 import NFTCardData from '../SampleData/TopTrendingList';
 import "./TodaysPick.css";
@@ -23,7 +24,9 @@ function TodaysPick() {
         
         </div>
         <div className="row btn_row" >
+          <Link to='/marketplace'>
             <button className="section-bottom-button">Marketplace</button>
+            </Link>
         </div>
       </div>
     </div>

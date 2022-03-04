@@ -10,7 +10,7 @@ import plusIcon from "../../Assets/plus-icon.png";
 
 import './FAQAccordion.css'
 
-function FAQAccordion({id,heading,dataBsTarget,collapseId}) {
+function FAQAccordion({id,heading,dataBsTarget,collapseId}) { 
   return (
     <div>
         <div class="accordion faqAccordion accordion-flush" id="accordionFlushExample">

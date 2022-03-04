@@ -2,6 +2,7 @@ import React from 'react';
 import ListItem from './ListItem';
 import "./TopCollectionsList.css";
 import TopCollectionsListData from '../SampleData/TopCollectionsList';
+import { Link } from 'react-router-dom';
 
 function TopCollectionsList() {
   return (
@@ -36,7 +37,9 @@ function TopCollectionsList() {
               <div className='col-1'></div>
         </div>
         <div className="row btn_row" >
+          <Link to='stats'>
             <button className="section-bottom-button">Stats</button>
+            </Link>
         </div>
       </div>
     </div>

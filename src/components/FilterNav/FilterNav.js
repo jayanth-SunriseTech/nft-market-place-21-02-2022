@@ -6,6 +6,8 @@ import FilterListIcon from '@mui/icons-material/FilterList';
 import Filters from "./Filters";
 import './FilterNav.css'
 import { useState } from 'react';
+import SortAccordion from './SortAccordion';
+import SortOptions from '../SampleData/SortOptions'
 
 function FilterNav({ showFilter , setShowFilter }) {
     
@@ -38,10 +40,12 @@ function FilterNav({ showFilter , setShowFilter }) {
                         </button>
                         </div>
                         </div>
-                </div>
+                </div> 
                 
                 <div className='sortBy_btn_container'>
-                    <button className='filter_btns sortBy_btn'>Sort by </button>
+                    {/* <button className='filter_btns sortBy_btn'>Sort by </button> */}
+                    {SortOptions.map((e)=> <SortAccordion id={e.id} heading={e.heading}dataBsTarget={e.collapseTarget}collapseId={e.collapseId}SortOption1={e.SortOption1}SortOption2={e.SortOption2} SortOption3={e.SortOption3} SortOption4={e.SortOption4} SortOption5={e.SortOption5}/>)}
+                   
                     <div className='sortBy_Container'>
 
                     </div>

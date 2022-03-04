@@ -392,7 +392,7 @@
 
 .filterNavRow {
   z-index: -1;
-}
+} 
 
 .filterRow {
   z-index: 99;
@@ -400,7 +400,7 @@
   margin-top: 4%;
 }
 
-.accordion .accordion-flush {
+ .MenuboardAccordion {
   border: solid 1px #f1c1c1 !important;
   border-radius: 10px !important;
 }
@@ -425,8 +425,8 @@
 
 .accordion-button:hover,
 .accordion-button:active,
-.accordion-item:hover,
-.accordion-item:active,
+.MenuboardAccordion-item:hover,
+.MenuboardAccordion-item:active,
 .accordion-button:not(.collapsed):hover,
 .accordion-button:not(.collapsed):active {
   background: transparent;
@@ -473,20 +473,20 @@ border: 0;
 
 
 
-.accordion-flush .accordion-item {
+.MenuboardAccordion .MenuboardAccordion-item {
   border-right: solid 1px #f1c1c1 !important;;
   border-left: solid 1px #f1c1c1 !important;;
  
 }
 
-.accordion-flush .accordion-item:first-child{
+.MenuboardAccordion .MenuboardAccordion-item:first-child{
   border-top: solid 1px #f1c1c1 !important;;
   border-right: solid 1px #f1c1c1 !important;;
   border-left: solid 1px #f1c1c1 !important;;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
-.accordion-flush .accordion-item:last-child{
+.MenuboardAccordion .MenuboardAccordion-item:last-child{
   border-right: solid 1px #f1c1c1 !important;;
   border-left: solid 1px #f1c1c1 !important;;
   border-bottom: solid 1px #f1c1c1 !important;;

@@ -7,6 +7,7 @@ import collectionImage2 from "../../Assets/rectangle-11.png";
 import collectionImage3 from "../../Assets/rectangle-1.png";
 import collectionImage4 from "../../Assets/rectangle-2.png";
 import collectionImage5 from "../../Assets/rectangle-11.png";
+import { Link } from "react-router-dom";
 
 function OurCollections() {
   return (
@@ -220,7 +221,9 @@ function OurCollections() {
           <div className="col-1"></div>
         </div>
         <div className="row btn_row">
+          <Link to='/collections'>
           <button className="section-bottom-button">Collections</button>
+          </Link>
         </div>
       </div>
     </div>
