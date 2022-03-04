@@ -109,9 +109,8 @@ width: 100%;
  margin-left: 2%;
 }
 
-.user_icon{
-    width: 80px;
-    height: 80px;
+.user-icon{
+  font-size: 32px;
     cursor: pointer;
     color: #fff !important;
  
@@ -127,6 +126,7 @@ width: 100%;
 .connect_btn_pc{
   border: 1px solid #b22222;
   border-radius: 20px;
+  margin-left: 20px;
   color: #fff;
   outline: none;
   font-size: 15px;

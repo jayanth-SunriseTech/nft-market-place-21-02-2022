@@ -7,11 +7,21 @@ import Filters from "./Filters";
 import './FilterNav.css'
 import { useState } from 'react';
 import SortAccordion from './SortAccordion';
-import SortOptions from '../SampleData/SortOptions'
+import SortOptions from '../SampleData/SortOptions';
+import Select from 'react-select';
+
+const options = [
+  { value: 'Recently Listed', label: 'Recently Listed' },
+  { value: 'Ending Soon', label: 'Ending Soon' },
+  { value: 'Price Low - High', label: 'Price Low - High' },
+  { value: 'Price High - Low', label: 'Price High - Low' },
+  { value: 'Most Favourited', label: 'Most Favourited' },
+];
 
 function FilterNav({ showFilter , setShowFilter }) {
     
     const[showSort,setShowSort] = useState(false);
+    const [selectedOption, setSelectedOption] = useState(null);
 
 
     const handleShowFilter = () => {
@@ -43,11 +53,30 @@ function FilterNav({ showFilter , setShowFilter }) {
                 </div> 
                 
                 <div className='sortBy_btn_container'>
-                    {/* <button className='filter_btns sortBy_btn'>Sort by </button> */}
-                    {SortOptions.map((e)=> <SortAccordion id={e.id} heading={e.heading}dataBsTarget={e.collapseTarget}collapseId={e.collapseId}SortOption1={e.SortOption1}SortOption2={e.SortOption2} SortOption3={e.SortOption3} SortOption4={e.SortOption4} SortOption5={e.SortOption5}/>)}
-                   
+                    {/* <button className='filter_btns sortBy_btn'>Sort by </button>
+                    {SortOptions.map((e)=> <SortAccordion id={e.id} heading={e.heading}dataBsTarget={e.collapseTarget}collapseId={e.collapseId}SortOption1={e.SortOption1}SortOption2={e.SortOption2} SortOption3={e.SortOption3} SortOption4={e.SortOption4} SortOption5={e.SortOption5}/>)} */}
+                    {/* <div class="form-group">
+                             
+                            <select
+                              class="form-select sortSelection"
+                              id="exampleFormControlSelect1"
+                            >
+                              <option value="" selected disabled>Sort by</option>
+                              <option>Recently Listed</option>
+                              <option>Ending Soon</option> 
+                              <option>Price Low - High</option>
+                              <option>Price High - low</option>
+                              <option>Most Favourited</option>
+                            </select>
+                            
+                          </div> */}
                     <div className='sortBy_Container'>
-
+                    <Select
+        defaultValue={selectedOption}
+        onChange={setSelectedOption}
+        options={options}
+        
+      />
                     </div>
                 </div>
                 

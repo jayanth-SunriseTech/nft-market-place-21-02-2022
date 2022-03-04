@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import './CreateNFTForm.css'
 import LogoutIcon from '@mui/icons-material/Logout';
 import AddIcon from '@mui/icons-material/Add';
@@ -11,13 +11,57 @@ import "filepond-plugin-image-preview/dist/filepond-plugin-image-preview.css";
 import { useState } from 'react';
 import plusIcon from '../../Assets/plus-icon.png';
 import CopyRightFooter from '../CopyRightFooter/CopyRightFooter';
+import PropertiesContext from '../../Utils/PropertiesContext';
 
 
 registerPlugin(FilePondPluginImageExifOrientation, FilePondPluginImagePreview)
 
 function CreateNFTForm() {
 
+ const propertiesContext = useContext(PropertiesContext) 
   const [files, setFiles] = useState([])
+  const [userLevel1, setUserLevel1] = useState([1])
+  const [usersetLevel, setUsersetLevel1] = useState([1])
+  const [userStats1, setUserStats1] = useState([1])
+  const [usersetStats, setUsersetStats1] = useState([1])
+
+
+  let handleAdd = () => {
+    propertiesContext.setPropertiesList([...propertiesContext.propertiesList + 1])
+  }
+
+  let handleDelete = (i) => { 
+
+    if(i != 1){
+
+        propertiesContext.propertiesList.splice(i-1,1);
+        propertiesContext.setPropertiesList([...propertiesContext.propertiesList])
+    }
+  }
+  let handleLevelAdd = () => {
+    propertiesContext.setLevelsList([...propertiesContext.levelsList + 1])
+  }
+
+  let handleLevelDelete = (i) => { 
+
+    if(i != 1){
+
+        propertiesContext.levelsList.splice(i-1,1);
+        propertiesContext.setLevelsList([...propertiesContext.levelsList])
+    }
+  }
+  let handleStatsAdd= () => {
+    propertiesContext.setStatsList([...propertiesContext.statsList + 1])
+  }
+
+  let handleStatsDelete = (i) => { 
+
+    if(i != 1){
+
+        propertiesContext.statsList.splice(i-1,1);
+        propertiesContext.setStatsList([...propertiesContext.statsList])
+    }
+  }
 
   return ( 
     <>
@@ -293,7 +337,7 @@ function CreateNFTForm() {
                 </button>
               </div>
               <div className="modal-body">
-              <table>
+              <table className='PropertiesModalTable'> 
                 <thead>
                   <tr>
                     <th>Type</th>
@@ -301,10 +345,21 @@ function CreateNFTForm() {
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
-                    <td><input type='text'  className='form-control' placeholder='Character'/></td>
-                    <td><input type='text' className='form-control'  placeholder='Male'/></td>
-                  </tr>
+                  {propertiesContext.propertiesList.map((e,i)=>{
+                    return (
+                      <tr className='inputRow' key={i+1}>
+                     
+                      <td><div className='charInput'>
+                      <button className='delProp_btn' onClick={() =>{handleDelete(i+1)}}><i class="bi bi-x-lg"></i></button><input type='text'  className='form-control characterInput' placeholder='Character'/>
+                      </div>
+                      </td>
+                      <td><input type='text' className='form-control'  placeholder='Male'/></td>
+                    </tr>
+                    )
+                  })}
+                 <tr className='add_btn_row'>
+                   <td ><button className='add_btn' onClick={handleAdd}>Add</button></td>
+                 </tr>
                 </tbody>
               </table>
               </div>
@@ -312,7 +367,7 @@ function CreateNFTForm() {
                 
                 <button
                   type="button"
-                  className="btn btn-primary"
+                  className="btn btn-danger"
                   
                   data-dismiss="modal"
                 >
@@ -350,16 +405,65 @@ function CreateNFTForm() {
                 </button>
               </div>
               <div className="modal-body">
-             
-                <p style={{ color: "black", textAlign: "left" }}>
-                This is levels modal.
-                </p>
+              <table className='PropertiesModalTable'> 
+                <thead>
+                  <tr>
+                    <div className='row'>
+                      <div className='col-2'></div>
+                      <div className='col-5'>
+                      <th>Name</th>
+                      </div>
+                      <div className='col-5'>
+                      <th>Value</th>
+                      </div>
+                    </div>
+                    
+                    
+                  </tr>
+                </thead>
+                <tbody>
+                  {propertiesContext.levelsList.map((e,i)=>{
+                    return (
+                      <tr className='inputRow' key={i+1}>
+                     <div className='row'>
+                       <div className='col-2'></div>
+                       <div className='col-5'>
+                       <td><div className='charInput'>
+                      <button className='delProp_btn' onClick={() =>{handleLevelDelete(i+1)}}><i class="bi bi-x-lg"></i></button><input type='text'  className='form-control characterInput' placeholder='Character'/>
+                      </div>
+                      </td>
+                       </div>
+                       <div className='col-5'>
+                       <td><div className='row'>
+                         <div className='col-5'>
+                         <input onChange={(e)=>setUserLevel1(e.target.value)} type='Number' className='form-control'  value={userLevel1? userLevel1:'3'} min="1" max={usersetLevel}/>
+                         </div>
+                         <div className='col-2'>
+                         <span>of</span>
+                         </div>
+                         <div className='col-5'>
+                         <input onChange={(e)=>setUsersetLevel1(e.target.value)}  type='Number' className='form-control'  value={usersetLevel? usersetLevel:'5'}/>
+                         </div>
+                       </div>
+                         </td>
+                       </div>
+                     </div>
+                      
+                     
+                    </tr>
+                    )
+                  })}
+                 <tr className='add_btn_row'>
+                   <td ><button className='add_btn' onClick={handleLevelAdd}>Add</button></td>
+                 </tr>
+                </tbody>
+              </table>
               </div>
               <div className="modal-footer">
                 
                 <button
                   type="button"
-                  className="btn btn-primary"
+                  className="btn btn-danger"
                   
                   data-dismiss="modal"
                 >
@@ -405,10 +509,40 @@ function CreateNFTForm() {
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
-                    <td><input type='text' placeholder='Character'/></td>
-                    <td><input type='text' placeholder='Male'/></td>
-                  </tr>
+                {propertiesContext.statsList.map((e,i)=>{
+                    return (
+                      <tr className='inputRow' key={i+1}>
+                     <div className='row'>
+                       <div className='col-2'></div>
+                       <div className='col-5'>
+                       <td><div className='charInput'>
+                      <button className='delProp_btn' onClick={() =>{handleStatsDelete(i+1)}}><i class="bi bi-x-lg"></i></button><input type='text'  className='form-control characterInput' placeholder='Character'/>
+                      </div>
+                      </td>
+                       </div>
+                       <div className='col-5'>
+                       <td><div className='row'>
+                         <div className='col-5'>
+                         <input onChange={(e)=>setUserStats1(e.target.value)} type='Number' className='form-control'  value={userStats1? userStats1:'3'} min="1" max={usersetStats}/>
+                         </div>
+                         <div className='col-2'>
+                         <span>of</span>
+                         </div>
+                         <div className='col-5'>
+                         <input onChange={(e)=>setUsersetStats1(e.target.value)}  type='Number' className='form-control'  value={usersetStats? usersetStats:'5'}/>
+                         </div>
+                       </div>
+                         </td>
+                       </div>
+                     </div>
+                      
+                     
+                    </tr>
+                    )
+                  })}
+                   <tr className='add_btn_row'>
+                   <td ><button className='add_btn' onClick={handleStatsAdd}>Add</button></td>
+                 </tr>
                 </tbody>
               </table>
               </div>
@@ -416,7 +550,7 @@ function CreateNFTForm() {
                 
                 <button
                   type="button"
-                  className="btn btn-primary"
+                  className="btn btn-danger"
                   
                   data-dismiss="modal"
                 >

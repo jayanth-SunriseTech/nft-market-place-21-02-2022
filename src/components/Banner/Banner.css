@@ -74,11 +74,13 @@ height: 100vh;
 }
 
 .explore_btn:hover{
-  background-color: #b22222;
+  background-color: #b22222 !important;
+  color: white !important;
   box-shadow: 0px 11px 36px -11px rgba(250,245,250,1);
 }
 .create_btn:hover{
-  background-color: #b22222;
+  background-color: #b22222 !important;
+  color: white !important;
   box-shadow: 0px 11px 36px -11px rgba(250,245,250,1);
 }
 
@@ -114,7 +116,7 @@ height: 100vh;
     background-repeat: no-repeat;
     background-position: -100px -55px;
   }
-
+ 
   .banner_nft {
     background: none;
     outline: none;

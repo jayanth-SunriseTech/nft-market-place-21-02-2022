@@ -2,11 +2,12 @@ import React from 'react';
 import './CopyRightFooter.css'
 
 function CopyRightFooter() {
+  const year = new Date().getFullYear();
   return (
     <div className='footer '>
-Copyright © 2022 . All rights Reserved. 
+<span>Copyright © {year} . All rights Reserved.</span> 
     </div>
-  )
+  ) 
 }
 
 export default CopyRightFooter

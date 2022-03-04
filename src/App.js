@@ -39,6 +39,7 @@ import ArtistDashboard from "./components/ArtistDashboard/ArtistDashboard";
 import MarketPlaceCollection from "./components/MarketPlaceCollection/MarketPlaceCollection";
 import UserCollectionPage from "./components/UserCollectionPage/UserCollectionPage";
 import ResourcePage from "./components/ResourcePage/ResourcePage";
+import { PropertiesProvider } from "./Utils/PropertiesContext";
 
 
 const App = () => {
@@ -60,6 +61,7 @@ const setShowFilter = uiContext.setShowFilter
     return (
         <div className="App">
                 <>
+                <PropertiesProvider>
            <BrowserRouter>
            
                < Navbar />
@@ -85,7 +87,9 @@ const setShowFilter = uiContext.setShowFilter
                </Routes>
               
                </BrowserRouter>
+               </PropertiesProvider>
             </>
+           
             </div>
     );
 }

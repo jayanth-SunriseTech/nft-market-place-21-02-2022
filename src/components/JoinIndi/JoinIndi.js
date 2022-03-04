@@ -20,6 +20,10 @@ function JoinIndi() {
         setShowContactDetails(!showContactDetails)
         console.log(showContactDetails)
       }
+
+      const handleScroll = () => {
+          window.scrollTo(0,0)
+      }
   return ( 
     <div className='join_Indi_page'>
 <div className='container-fluid'> 
@@ -100,12 +104,12 @@ function JoinIndi() {
         </div>
         </div>
     </div>
-    <div className='col-6'>
+    <div className='col-6 scrollToTop' onClick={handleScroll}>
     <KeyboardDoubleArrowUpIcon className="go_to_top_btn"/>
     </div>
             </div>
         </div>
-        
+         
         </div>
        
         

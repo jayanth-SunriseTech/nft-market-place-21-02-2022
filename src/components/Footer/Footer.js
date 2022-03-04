@@ -2,6 +2,7 @@ import React from 'react';
 import './Footer.css'
 
 function Footer() {
+    const year = new Date().getFullYear();
   return (
     <div className='footer_Page'>
         <div className='row'>
@@ -53,7 +54,7 @@ function Footer() {
             <div className='col-md-6 ' ></div>
         </div>
         <div className='row footer_copyRight_container'>
-            <span>Copyright &#9400;  2022. All Rights Reserved.</span>
+            <span>Copyright &#9400;  {year}. All Rights Reserved.</span>
         </div>
     </div>
   )

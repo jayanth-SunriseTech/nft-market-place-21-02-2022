@@ -2,7 +2,7 @@ import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { connectWallet, connectFailed } from "../../redux/WalletAction";
 import SearchIcon from '@mui/icons-material/Search';
-import profileImg from '../../Assets/profile.png'
+import userIcon from '../../Assets/user.svg'
 import walletImage from '../../Assets/wallet.png'
 import brandLogo from '../../Assets/logo.png'
 import './Navbar.css'
@@ -75,10 +75,11 @@ const Navbar = () => {
       </ul>
       <div className="account_icons_container">
       <div className="navbar navbar-collapse d-none d-md-block">
-          <NavLink className="nav-link"    to='/user-profile'>
-      <img src={profileImg} class="user_icon"/>
+          <NavLink className="nav-link "    to='/user-profile'>
+          <img src={userIcon}/> 
       </NavLink>
-      <img src={walletImage} class="wallet_icon"/>
+      {/* <img src={walletImage} class="wallet_icon"/> */}
+      <i style={{fontSize:'32px',color:'white'}} class="bi bi-wallet2"></i>
                     <div className="nav navbar-nav ms-auto ml-auto">
                         { !wallet.connected &&  
                                 <button className='btn connect_btn_pc' onClick={connect}>Connect Wallet</button> 
