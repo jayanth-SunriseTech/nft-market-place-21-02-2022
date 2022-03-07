@@ -76,6 +76,7 @@ function FilterNav({ showFilter , setShowFilter }) {
         onChange={setSelectedOption}
         options={options}
         
+        
       />
                     </div>
                 </div>

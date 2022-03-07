@@ -6,16 +6,7 @@
 
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
-    .filter_nav_container {
-        display: inline-block;
-        box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
-        border-radius: 5px;
-        margin-top: 1%;
-        padding: 1% 0 0 0;
-        height: 66px !important;
-        width: 271px !important;
-        margin-left: 40px !important;
-    }
+    
 
     .filtersearchbar_container {
         margin-left: 16% !important;

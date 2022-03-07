@@ -167,10 +167,10 @@ a{
     outline: none;
     font-size: 12px;
     padding: 10px 20px 10px 20px;
-    margin-top: 5% !important; 
+    margin-top: 12% !important;
     position: absolute;
     left: 59%;
-    top: 35%;
+    top: 9% !important;
 }
 
   .navbar-light .navbar-toggler {
