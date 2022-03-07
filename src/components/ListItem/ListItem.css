@@ -61,7 +61,7 @@
 }
 
 .smallImg {
-    margin-top: -2%;
+    margin-top: -5%;
     width: 220px;
     height: 233px;
 }
@@ -108,5 +108,10 @@
 
     .previeewContainer{
         margin-top: 5%;
+    }
+
+    .smallImg{
+        margin-top: -5%;
+        height: 120px;
     }
 }

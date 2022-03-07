@@ -9,7 +9,7 @@ import profilePic from '../../Assets/rectangle-11.png'
 
 function UserProfileCard() {
   return (
-    <div class="container UserProfile_card">
+    <div class=" UserProfile_card">
       <div class="row">
         <div class="col-md-12 col-sm-12 col-sm-12">
           <div class="profile-block">
@@ -35,16 +35,24 @@ function UserProfileCard() {
                 <div className="col-lg-3 ">
                   <div className="row">
                     <div className="col-lg-3">
+                      <a href="https://www.google.com" target='_blank'>
                       <img  src={fb} alt='social-fb' className="social-img" />
+                      </a>
                     </div>
                     <div className="col-lg-3">
+                    <a href="https://www.google.com" target='_blank'>
                       <img src={twitter} alt='social-fb' className="social-img"/>
+                      </a>
                     </div>
                     <div className="col-lg-3">
+                    <a href="https://www.google.com" target='_blank'>
                       <img src={youtube} alt='social-fb' className="social-img"/>
+                      </a>
                     </div>
                     <div className="col-lg-3">
+                    <a href="https://www.google.com" target='_blank'>
                       <img src={email} alt='social-fb' className="social-img"/>
+                      </a>
                     </div>
                    
                   </div>

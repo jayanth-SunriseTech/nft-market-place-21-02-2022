@@ -13,7 +13,7 @@ function Accordion() {
     <div>
         <div class="accordion accordion-flush MenuboardAccordion" id="accordionFlushExample">
   <div class="accordion-item MenuboardAccordion-item">
-    <h2 class="accordion-header" id="flush-headingOne">
+    <h2 class="accordion-header menuboard-accordion-header" id="flush-headingOne">
       <button class="accordion-button collapsed first" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
         <div className='row'>
         <div className="col-2 icon">

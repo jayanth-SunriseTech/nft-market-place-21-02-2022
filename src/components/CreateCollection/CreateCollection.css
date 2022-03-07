@@ -215,9 +215,15 @@ color: #b22222 !important;
 
 ul li{
     border-bottom: 1px solid #a5a3a3a3;
-    margin-bottom: 3%;
+    margin-bottom: 3%; 
 }
 
+
+.collection-social-input{
+    margin-bottom: 2%;
+    width: 40% !important;
+    margin-left: 5%;
+}
 
 .form-switch .form-check-input{
     background-color: black;
@@ -257,6 +263,19 @@ width: 45px;
     border-radius: 0.25rem;
     transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
+
+
+.social-div{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.social-icon-img{
+    width: 30px;
+    height: 27px;
+}
+
 
 
 

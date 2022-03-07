@@ -9,6 +9,11 @@ import FilePondPluginImagePreview from "filepond-plugin-image-preview";
 import "filepond-plugin-image-preview/dist/filepond-plugin-image-preview.css";
 import { useState } from "react";
 import plusIcon from "../../Assets/plus-icon.png";
+import fb from "../../Assets/facebook-icon.png";
+import twitter from "../../Assets/twitter-icon.png";
+import discord from "../../Assets/discord-icon.png";
+import telegram from "../../Assets/telegram-icon.png";
+import website from "../../Assets/website-icon.png";
 import CopyRightFooter from "../CopyRightFooter/CopyRightFooter";
 
 registerPlugin(FilePondPluginImageExifOrientation, FilePondPluginImagePreview);
@@ -171,13 +176,70 @@ function CreateCollection() {
                   <option value="" selected disabled>
                     Select a Category
                   </option>
-                  <option>1</option>
+                  <option>1</option> 
                   <option>2</option>
                   <option>3</option>
                   <option>4</option>
                   <option>5</option>
                 </select>
               </div>
+              <div class="form-group">
+                  <div className="col-lg-12 collection_input_label">
+                    <span>Social Links</span>
+                  </div>
+                  <small
+                    id="exampleFormControlSelect1"
+                    class="form-text text-muted collectionSmallText"
+                  >
+                    Help Collectors verify your collection.
+                  </small>
+                  <div className="social-div">
+                  <img src={twitter} alt='social-fb'/>
+                  <input
+                    type="text"
+                    class="form-control collection-social-input"
+                    id="exampleInputEmail1"
+                    placeholder="Twitter" 
+                  />
+                  </div>
+                  <div className="social-div">
+                  <img src={fb} alt='social-fb' className="social-icon-img"/>
+                  <input
+                    type="text"
+                    class="form-control collection-social-input" 
+                    id="exampleInputEmail1"
+                    placeholder="Facebook"
+                  />
+                  </div>
+                 <div className="social-div">
+                 <img src={website} alt='social-fb' className="social-icon-img"/>
+                 <input
+                    type="text"
+                    class="form-control collection-social-input"
+                    id="exampleInputEmail1"
+                    placeholder="Website Address"
+                  />
+                 </div>
+                 <div className="social-div">
+                 <img src={discord} alt='social-fb' className="social-icon-img"/>
+                 <input
+                    type="text"
+                    class="form-control collection-social-input"
+                    id="exampleInputEmail1"
+                    placeholder="Discord Profile"
+                  />
+                 </div>
+                 <div className="social-div">
+                 <img src={telegram} alt='social-fb' className="social-icon-img"/>
+                 <input
+                    type="text"
+                    class="form-control collection-social-input"
+                    id="exampleInputEmail1"
+                    placeholder="Telegram"
+                  />
+                 </div>
+                 
+                </div>
               <div className="form-group">
                 <div className="row ">
                   <div className="col-lg-1"></div>

@@ -4,6 +4,7 @@ import ImageIcon from '../../Assets/image-file-icon.png';
 import FileCopyIcon from '../../Assets/file-explore-icon.png';
 import AudiotrackIcon from '../../Assets/speaker-icon.png';
 import CopyRightFooter from '../CopyRightFooter/CopyRightFooter';
+import { Link } from 'react-router-dom';
 
 function ArtistDashboard() {
   return (
@@ -33,8 +34,12 @@ function ArtistDashboard() {
         </div>
         <div className="row">
             <div className='dashboard_btns'>
+                <Link to='/mint'>
             <button className='dashboard_create_btn'>Create NFTs</button>
+            </Link>
+            <Link to='/create-collection'>
             <button className='dashboard_create_btn'>Create my Collection</button>
+            </Link>
             </div>
         </div>
     </div>

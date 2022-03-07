@@ -7,6 +7,7 @@
       padding: 0 0 40px 0;
       overflow: hidden;
       border-radius: 12px;
+      width: 1220px;
     }
 
 
@@ -209,6 +210,7 @@
       padding: 0 0 40px 0;
       overflow: hidden;
       border-radius: 12px;
+      width: 270px;
   }
 
     .profile-block-thumb {
@@ -324,5 +326,13 @@
     position: relative;
     top: -25px;
     left: 81px;
+}
+
+.sortBy_Container{
+  width: 100px;
+}
+
+ .css-b62m3t-container{
+  width: 100px !important;
 }
   }
