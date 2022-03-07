@@ -152,6 +152,10 @@ a{
   border: none !important;
 }
 
+.web3modal-modal-lightbox{
+  z-index: 999 !important;
+}
+
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
   .searchbar_container{
     display: none;
@@ -189,5 +193,8 @@ a{
     justify-content: flex-start !important;
     align-items: flex-start !important;
 
+  }
+  .web3modal-modal-lightbox{
+    z-index: 999 !important;
   }
 }

@@ -157,11 +157,74 @@ padding: 10px;
 
 }
 
+.mobile_stats_view{
+    display: none !important;
+}
+
+.stats-mobile-column{
+    padding: 2px !important;
+}
+
+ .stat-value {
+    font-size: 14px;
+}
+
+.stast_mobile_container{
+    border: 1px solid #a5a3a3a3;
+    border-radius: 10px;
+}
+
+.stat-key{
+    font-size: 10px;
+    color: #2e2d2dfb;
+}
+.stat-value{
+    color: black;
+    font-weight: bold;
+}
+
+
+.increaseValue{
+    color: #44bb19;
+}
+
+.decreaseValue{
+    color: #bb1d19;
+}
+
+
+.statsRow{
+    margin-top: 5%;
+}
+
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
     .stats-select{
         width: 100px;
         height: 46px;
         font-size: 9px;
+    }
+
+    .mobile_stats_view{
+        display: block !important;
+   
+    }
+
+    .stats_table_pc{
+        display: none !important;
+    }
+    
+    .stast_mobile_container {
+        border: 1px solid #a5a3a3a3;
+        border-radius: 10px;
+        padding: 15px;
+    }
+
+    .statsRow{
+        margin-top: 5% !important;
+    }
+    .stat_mobile_heading{
+        text-align: left;
+        padding-left: 2% !important;
     }
 }
 

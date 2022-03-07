@@ -45,9 +45,9 @@ function ResourcePage() {
 <div className='row resourceRow3'>
     <div className='col-lg-2 col-1'></div>
     <div className='col-lg-8 col-10 faq_accordion_containe'>
-        {FAQHeadings.map((e)=>
-    <FAQAccordion heading={e.heading} id={e.id} dataBsTarget={e.collapseTarget} collapseId={e.collapseId}/>
-        )}
+        
+    <FAQAccordion />
+ 
     </div>
     <div className='col-lg-2 col-1'></div>
 </div>

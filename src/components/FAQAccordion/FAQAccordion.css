@@ -75,11 +75,51 @@ content: '';
 
   }
 
+  .faqAccordion_body{
+    background-color: #f1f1f1;
+   font-size: 15px;
+   margin-top: -12px;
+   padding-top: 5%;
+}
 
+.solutionsList{
+
+  border: none !important;
+}
+
+
+.solutionsList li {
+  list-style: disc;
+  margin: 0 !important;
+  padding: 3px !important;
+  border: none !important;
+
+}
+
+.faq-1-img{
+  width: 970px;
+}
+.faq-2-img{
+  width: 970px;
+}
+
+.contactURLs{
+  color: #b22222 !important;
+  text-decoration: none !important;
+}
+
+.overflowContain{
+  word-wrap: break-word;
+}
+
+.INDI_HIRING li{
+  list-style: none;
+  border: none !important;
+}
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
     .faqAccordion .accordion-button{
         height: 30px !important;
-        background-color: white;
+        /* background-color: white; */
         border-top-left-radius: 50px !important;
         border-bottom-left-radius: 50px !important;
           border-top-right-radius: 50px !important;
@@ -142,10 +182,21 @@ content: '';
       .faqAccordion_body{
          background-color: #f1f1f1;
         font-size: 9px;
+        margin-top: -5px;
     }
 
     .faqAccordion .accordion-button:not(.collapsed)::after {
         background-image: url("../../Assets/plus-icon-minus.png") !important;
         transform: rotate(-180deg);
       }
+
+      .faq-1-img, .faq-2-img{
+        width: 260px;
+      }
+
+      .INDI_HIRING li{
+        list-style: none;
+        border: none !important;
+      }
+     
 }
