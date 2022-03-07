@@ -3,7 +3,7 @@
 margin-top: 15%;
 margin-right: 5%;
     max-width: 400px;
-    z-index: -1;
+    z-index: 99;
     /* border: solid 1px #f1c1c1 !important;
     border-radius: 10px; */
 }
@@ -34,7 +34,7 @@ margin-right: 5%;
     width: 100%;
     
 }
-.nftContainer .bid_btn{
+.bid_btn{
     position: absolute; 
     top: 90%;
     left: 50%;
@@ -45,14 +45,16 @@ margin-right: 5%;
     font-size: 16px;
     padding: 12px 24px;
     border: none;
-    cursor: pointer;
+    cursor: pointer !important;
     border-radius: 5px;
     text-align: center;
     border-radius: 12px;
+    z-index: 99;
 }
 
 .mobile_bid{
     display: none;
+    z-index: -1;
 }
 .nftContainer .price_container{
     position: absolute;
@@ -84,7 +86,7 @@ background-color: #555;
         height: 138px !important;
     }
 
-    .nftContainer .bid_btn {
+ .mobile_bid {
         position: absolute;
         top: 85%;
         left: 32.5%;
@@ -101,6 +103,7 @@ background-color: #555;
         border-radius: 5px;
         text-align: center;
         border-radius: 12px;
+        z-index: 99;
     }
 
     .nftContainer .price_container {
