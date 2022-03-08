@@ -7,6 +7,7 @@ import TodayIcon from '@mui/icons-material/Today';
 import EditIcon from '@mui/icons-material/Edit';
 import "./ArtReflection.css";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 function ArtReflection() {
   const[showGallery,setShowGallery] = useState(false);
@@ -60,7 +61,9 @@ function ArtReflection() {
             <img className="section-2-hand-img" onClick={hanldeShowGallery} src={Hand} alt='handPng'/>
             </div>
             <div className={showGallery ? 'right_side_content_active':'right_side_content_not_active'}>
+              <Link to='/collections'>
             <button className="showGallery_btn">Gallery</button>
+            </Link>
             <img className="section-2-hand-img" onClick={hanldeShowGallery} src={Hand} alt='handPng'/>
             </div>
           </div>

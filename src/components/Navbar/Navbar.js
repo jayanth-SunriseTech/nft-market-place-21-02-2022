@@ -30,7 +30,7 @@ const Navbar = () => {
         dispatch(connectFailed(errorDiv()));
     }
     return (
-        <nav className='navbar navbar-expand-lg navbar-light bg-light' role="navigation">
+        <nav className='navbar navbar-expand-lg navbar-light bg-light ' role="navigation">
             <div className=" container-fluid navbar_mobile" style={{margin:0}}>
               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -41,7 +41,7 @@ const Navbar = () => {
                                 <button className='navbar-toggler mr-auto ml-auto connect_btn_mobile' onClick={connect}>Connect Wallet</button> 
                             }
                         { wallet.connected && 
-                            <button className='navbar-toggler mr-auto ml-auto btn btn-danger' onClick={disconnect} >Disconnect: {wallet.address.slice(0, 5) + '...' + wallet.address.slice(-5)}</button>
+                            <button className='navbar-toggler mr-auto ml-auto btn btn-danger disconnect_btn_mobile' onClick={disconnect} >Disconnect: {wallet.address.slice(0, 5) + '...' + wallet.address.slice(-5)}</button>
                         }
                         <div className="searchbar_container">
                             <div className="search">
@@ -54,23 +54,23 @@ const Navbar = () => {
                         
                         <ul class=" collapse navbar-collapse navbar-nav me-auto mb-2 mb-lg-0 nav_list_container" id="navbarTogglerDemo01">
                         
-        <li class="nav-item">
-        <NavLink activeClassName="active" className="nav-link"   to='/collections'>
+        <li class="nav-item" >
+        <NavLink activeClassName="active" to='/collections' className="nav-link" data-toggle="collapse" data-target="#navbarTogglerDemo01"    >
          Explore
         </NavLink>
         </li>
         <li class="nav-item">
-        <NavLink activeClassName="active" className="nav-link"    to='/mint'>
+        <NavLink activeClassName="active" className="nav-link" data-toggle="collapse" data-target="#navbarTogglerDemo01"    to='/mint'>
           Create
         </NavLink>
         </li>
         <li class="nav-item">
-        <NavLink activeClassName="active" className="nav-link"    to='/stats'> 
+        <NavLink activeClassName="active" className="nav-link" data-toggle="collapse" data-target="#navbarTogglerDemo01"    to='/stats'> 
           Stats
         </NavLink>
         </li>
         <li class="nav-item">
-        <NavLink activeClassName="active" className="nav-link"    to='/resources'> Resources</NavLink>
+        <NavLink activeClassName="active" className="nav-link" data-toggle="collapse" data-target="#navbarTogglerDemo01"    to='/resources'> Resources</NavLink>
         </li>
       </ul>
       <div className="account_icons_container">
@@ -85,7 +85,7 @@ const Navbar = () => {
                                 <button className='btn connect_btn_pc' onClick={connect}>Connect Wallet</button> 
                             }
                         { wallet.connected && 
-                            <button className='btn btn-danger'onClick={disconnect} >Disconnect: {wallet.address.slice(0, 5) + '...' + wallet.address.slice(-5)}</button>
+                            <button className='btn btn-danger disconnect_btn_pc'onClick={disconnect} >Disconnect: {wallet.address.slice(0, 5) + '...' + wallet.address.slice(-5)}</button>
                         }
                     </div>
                 </div>

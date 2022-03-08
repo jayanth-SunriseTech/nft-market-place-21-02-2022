@@ -6,6 +6,7 @@ import './UserCollectionPage.css'
 import CopyRightFooter from '../CopyRightFooter/CopyRightFooter';
 import { useState } from 'react';
 import Tilt from "react-parallax-tilt";
+import { Link } from 'react-router-dom';
 
 function UserCollectionPage() {
   
@@ -26,6 +27,7 @@ function UserCollectionPage() {
          <div className="col-lg-2 user-details_container">
          
          <div className='userProfile_card'>
+           <Link to='/user-profile'>
           <div className="profileImage_container">
                   
       <img className="User-profile-image" src={NFT} alt="" />
@@ -39,6 +41,7 @@ function UserCollectionPage() {
       </div>
       
                   </div>
+                  </Link>
           </div>
          </div>
          </Tilt>

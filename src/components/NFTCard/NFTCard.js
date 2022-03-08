@@ -4,9 +4,7 @@ import "./NFTCard.css";
 
 function NFTCard({nftImage,price}) {
 
-  const handleClick = () => {
-    alert("hi");
-  }
+  
   return (
     <div className='col-6 col-md-4 col-lg-3'>
     <div className='nftContainer'>
@@ -14,9 +12,9 @@ function NFTCard({nftImage,price}) {
   <div className="NFT_card_body" >
   <img src={nftImage} className="nftCard" />
   <span class="price_container">{price}</span>
-  <button type='button' onClick={handleClick} className="bid_btn pc_bid">Place a Bid
+  <button type='button'  className="bid_btn pc_bid">Place a Bid
     </button> 
-  <button type='button' onClick={handleClick} className="bid_btn mobile_bid"> Bid
+  <button type='button'  className="bid_btn mobile_bid"> Bid
     </button> 
     
   </div>
